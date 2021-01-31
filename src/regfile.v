@@ -1,14 +1,15 @@
-module regfile #(parameter REGFILE_SIZE=32, WORD_SIZE=32)(
+module regfile #(parameter ADDR_SIZE=5, WORD_SIZE=32)(
 	input clk,
 	input w_en,
-	input [31:0] raddr1,
-	input [31:0] raddr2,
-	input [31:0] waddr,
-	input [31:0] wdata,
-	output [31:0] rdata1,
-	output [31:0] rdata2
+	input [ADDR_SIZE-1:0] raddr1,
+	input [ADDR_SIZE-1:0] raddr2,
+	input [ADDR_SIZE-1:0] waddr,
+	input [WORD_SIZE-1:0] wdata,
+	output [WORD_SIZE-1:0] rdata1,
+	output [WORD_SIZE-1:0] rdata2
 	);
 
+	parameter REGFILE_SIZE = 2**ADDR_SIZE;
 	reg [WORD_SIZE-1:0] regblock [REGFILE_SIZE-1:0];
 
 	assign rdata1 = regblock[raddr1];
