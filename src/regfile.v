@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module regfile #(parameter ADDR_SIZE=5, WORD_SIZE=32)(
 	input clk,
 	input w_en,
@@ -18,5 +20,8 @@ module regfile #(parameter ADDR_SIZE=5, WORD_SIZE=32)(
 	always @ (posedge clk)
 		if(w_en)
 			regblock[waddr] <= wdata; 
+			
+	always@(posedge clk)
+	   regblock[0] <= 0;
 
 endmodule
