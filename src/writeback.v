@@ -1,14 +1,11 @@
 `timescale 1ns / 1ps
+`include "params.vh"
 
 module writeback(
-    input [31:0] instruction,
-    output reg w_en,
-    output [4:0] rd
+    input [31:0] instruction,               // instruction at writeback stage
+    output reg w_en,                        // write enable to register bank
+    output [4:0] rd                         // destination register
     );
-    
-    parameter LOAD= 7'b0000011; 
-    parameter IMM= 7'b0010011; 
-    parameter REG =7'b0110011;
     
     wire [6:0] opcode;
     
@@ -17,7 +14,7 @@ module writeback(
     
     always@(*) begin
         case(opcode)
-            LOAD, IMM, REG: w_en=1;
+            `LOAD, `IMM, `REG: w_en=1;
             default: w_en=0;
         endcase
     end

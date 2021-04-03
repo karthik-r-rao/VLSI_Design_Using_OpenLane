@@ -1,9 +1,11 @@
 `timescale 1ns / 1ps
 
 module slt(
-    input [3:0] NZCV,
+    input signed [31:0] a,
+    input signed [31:0] b,
     output [31:0] out
     );
     
-    assign out = {{31{1'b0}}, (NZCV[0] ^ NZCV[3])};
+    assign out = (a<b)?1:0;
+    
 endmodule

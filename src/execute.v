@@ -1,23 +1,22 @@
 `timescale 1ns / 1ps
 
 module execute(
-    input clk,
-    input [31:0] instruction,
-    input [31:0] pc,
-    input [31:0] op1,
-    input [31:0] op2,
-    input [31:0] branch_offset,
-    output [31:0] aluout,
-    output bt,
-    output [31:0] branch_addr
+    input [31:0] instruction,                   // instruction in execute stage
+    input [31:0] pc,                            // pc of instruction+1 in execute stage
+    input [31:0] op1,                           // operand 1
+    input [31:0] op2,                           // operand 2
+    input [31:0] offset,                        // immediate data used in EA calculation for loads, stores and branches
+    output [31:0] aluout,                       // output of execute stage
+    output [31:0] addr,                         // EA used in loads, stores and branches
+    output branch                               // signal to indicate branch taken
     );
 
     wire [3:0] alusel;
     wire cin;
-    wire branch;
     wire [31:0] tmp;
+    wire cout;
     
-    assign tmp = branch?pc:op1;
+    assign tmp = branch?pc:op1;                 // either pc for branches or operand1 for loads/stores
     
     alu_cu alucu1(.instruction(instruction),
                     .alusel(alusel),
@@ -30,11 +29,7 @@ module execute(
                 .instruction(instruction),
                 .opcode(alusel),
                 .out(aluout),
-                .branch(branch),
-                .branch_taken(bt));
+                .branch(branch));
                 
-    adder add1(.a(tmp),
-                .b(branch_offset),
-                .cin(0),
-                .out(branch_addr));
+    assign addr = tmp + offset;
 endmodule

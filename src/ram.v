@@ -1,17 +1,17 @@
 `timescale 1ns / 1ps
 
-module ram(
+module ram #(parameter ADDR_SIZE = 5)(
 	input clk,
-	input w_en,
-	input [1:0] offset,
-	input [3:0] sel,
-	input [31:0] maddr1,
-	input [31:0] maddr2,
-	output [31:0] mdata1,
-	inout [31:0] mdata2
+	input w_en,                                                    // write enable
+	input [1:0] offset,                                            // byte/(s) in a word 
+	input [3:0] sel,                                               // type of instruction
+	input [31:0] maddr1,                                           // instruction address
+	input [31:0] maddr2,                                           // data address
+	output [31:0] mdata1,                                          // one way instruction bus
+	inout [31:0] mdata2                                            // data bus
 	);
 
-	parameter MEM_SIZE = 2**7;
+	parameter MEM_SIZE = 2**ADDR_SIZE;
 	reg [31:0] memblock [MEM_SIZE-1:0];
 
     wire clk1 [1:0];
@@ -20,8 +20,8 @@ module ram(
     assign clk1[0] = ~clk;
     assign clk1[1] = ~clk1[0];
 
-	assign mdata1 = memblock[maddr1];  // instruction
-	assign mdata2 = w_en? 32'hzzzzzzzz: memblock[maddr2];  // data
+	assign mdata1 = memblock[maddr1];                              // instruction
+	assign mdata2 = w_en? 32'hzzzzzzzz: memblock[maddr2];          // data
 
 	always @ (posedge clk1[1])
 		if(w_en) begin
