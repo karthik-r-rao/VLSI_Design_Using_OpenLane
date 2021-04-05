@@ -13,35 +13,27 @@
     --> In the event of a branch taken, the next two instructions in the pipe are replaced by NOP, defined as 
         NOP = ADDI R0, R0, #0.
     
-    --> Loads and Stores are tested on a 32*1024 RAM implemented with registers. The lower section of the RAM region is
-        reserved for instructions, and the higher section can be used for storing data. 
-        A scheme of logical and physical addresses is used as implementing an 8*1024 RAM with 32 bit access is quite tough in hardware. 
-        In this, the logical address is byte-addressable, and supports LB, LH, LBU, LHU, SB, and SH instructions apart from LW and SW.
-        This logical address is shifted right 2 places to get the physical address. 
-        For ex:
-        Suppose logical address (user view) = 97
-        The required data is actually the bits [15:8] stored at address 24.
-        97>>2 = 97/4 = 24.
-        97%4 = 1.
-    
-        Logical address view                            Physical Address view
-        (each location-8 bit)                           (each location-32 bit)
-        --3---|--2---|--1--|--0--         =                -----0-----
-        --7---|--6---|--5--|--4--         =                -----1-----
-        --11--|--10--|--9--|--8--         =                -----2-----
-    
     --> Registers of the form $<stage1>_<stage2>_<regname> indicate pipeline registers. 
 */
 
 module core(
     input clk, 
     input rst,
-    output [31:0] executed_inst
+    
+    // instruction memory interface
+    input [31:0] instruction,                               // instruction
+    output [31:0] pc,                                       // program counter
+    
+    // data memory interface
+    input [31:0] rdata,                                     // read data
+    output [31:0] data_address,                             // address for read and write (data)
+    output[31:0] wdata,                                     // write data
+    output [3:0] wstrobe,                                   // strobe for byte accesses
+    output wen,                                             // write enable (data)
+    output ren                                              // read enable (data)
     );
 
     // fetch 
-    wire [31:0] phy_address_inst;
-    wire [31:0] instruction;
     reg [31:0] ID_IF_INST;
     reg [31:0] ID_IF_PC;
     reg [31:0] next_pc;
@@ -53,7 +45,7 @@ module core(
     wire [11:0] imm;
     wire [4:0] rs1;
     wire [4:0] rs2;
-    wire sel1;
+    wire sel;
     reg [31:0] X_ID_INST;
     reg [31:0] X_ID_OP1;
     reg [31:0] X_ID_OP2;
@@ -71,12 +63,9 @@ module core(
     reg MEM_X_BRANCH_TAKEN;                                 // indicates whether a branch is taken
     
     // memory access
-    wire [31:0] phy_address_data;
-    wire [31:0] lsu_out;
     wire [31:0] wbmemout;
-    wire [3:0] sel;
-    wire [1:0] addr_offset;
-    wire mwen;
+    wire [3:0] strobe;
+    wire en;
     reg [31:0] WB_MEM_PC;
     reg [31:0] WB_MEM_INST;
     reg [31:0] WB_MEM_OUT;
@@ -94,20 +83,11 @@ module core(
 // **************************************** //
 // instantiations
 
-    ram ram1(.clk(clk),
-             .maddr1(phy_address_inst),
-             .maddr2(phy_address_data),
-             .mdata1(instruction),
-             .mdata2(wbmemout),
-             .w_en(mwen),
-             .sel(sel),
-             .offset(addr_offset));
-             
     decode d1(.instruction(ID_IF_INST),
               .rs1(rs1),
               .rs2(rs2),
               .imm(imm),
-              .sel1(sel1),
+              .sel(sel),
               .addr(addr));
                 
     execute e1(.instruction(X_ID_INST),
@@ -118,15 +98,6 @@ module core(
                .aluout(memxaluout),
                .addr(memxaddr),
                .branch(branch));
-                 
-    lsu l1(.aluout(MEM_X_ALUOUT),
-           .address(phy_address_data),
-           .offset(addr_offset),
-           .instruction(MEM_X_INST),
-           .memout(wbmemout),
-           .out(lsu_out),
-           .write(mwen),
-           .sel(sel));
              
     regfile r1(.clk(clk),
 	           .w_en(rwen),
@@ -145,15 +116,18 @@ module core(
                         .instruction2(X_ID_INST),
                         .instruction3(MEM_X_INST),
                         .dep_place(dep_place));
-                        
-    always@(negedge clk)                                    // the data dependency flag is updated in the negative clock edge    
-        DEP_PLACE <= dep_place;
-             
+    
+    memory_access m1(.instruction(MEM_X_INST),
+                     .address(MEM_X_ADDR),
+                     .wstrobe(strobe),
+                     .wen(en),
+                     .ren(ren));
+          
              
 // **************************************** //             
 // Fetch stage
 
-    assign phy_address_inst = ID_IF_PC>>2;
+    assign pc = ID_IF_PC;
     
     always@(posedge clk) begin
         if(rst) begin
@@ -186,15 +160,18 @@ module core(
             X_ID_INST <= ID_IF_INST;
             X_ID_OFFSET <= addr;
             if(DEP_PLACE[0]==1) X_ID_OP1 <= memxaluout;     // priority is given to bypass path from execute stage
-            else if(DEP_PLACE[2]==1) X_ID_OP1 <= lsu_out;
+            else if(DEP_PLACE[2]==1) X_ID_OP1 <= rdata;
             else X_ID_OP1 <= rop1;
             
             if(DEP_PLACE[1]==1) X_ID_OP2 <= memxaluout;     // priority is given to bypass path from execute stage
-            else if(DEP_PLACE[3]==1) X_ID_OP2 <= lsu_out;
-            else X_ID_OP2 <= sel1? {{20{imm[11]}}, imm}:rop2;
+            else if(DEP_PLACE[3]==1) X_ID_OP2 <= wbmemout;
+            else X_ID_OP2 <= sel? {{20{imm[11]}}, imm}:rop2;
         end
         X_ID_PC <= ID_IF_PC;
      end 
+     
+     always@(negedge clk)                                   // the data dependency flag is updated in the negative clock edge    
+        DEP_PLACE <= dep_place;
  
  // **************************************** // 
  // Execute stage
@@ -219,15 +196,16 @@ module core(
 // **************************************** //
 // Memory access stage
     
-    assign phy_address_data = MEM_X_ADDR>>2;
-    assign addr_offset = {MEM_X_ADDR[1], MEM_X_ADDR[0]}; 
-    
-    always@(posedge clk) begin
-        WB_MEM_INST<=MEM_X_INST;
-        WB_MEM_PC<=MEM_X_PC;
-        WB_MEM_OUT <= lsu_out;
+    always @(posedge clk) begin
+        WB_MEM_PC <= MEM_X_PC;
+        WB_MEM_INST <= MEM_X_INST;
+        WB_MEM_OUT <= wbmemout;
     end
     
-    assign executed_inst = WB_MEM_INST;
+    assign wbmemout = ren? rdata: MEM_X_ALUOUT;
+    assign data_address = MEM_X_ADDR;
+    assign wdata = MEM_X_ALUOUT;
+    assign wstrobe = strobe;
+    assign wen = en;
     
 endmodule
