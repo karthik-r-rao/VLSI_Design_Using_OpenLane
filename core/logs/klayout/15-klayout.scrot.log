@@ -1,0 +1,6 @@
+Using Techfile: /home/karthik/openlane/pdks/sky130A/libs.tech/klayout/sky130A.lyt
+Using layout file: /openLANE_flow/designs/core/runs/core/results/cts/core.cts.def
+[INFO] Reading tech file: /home/karthik/openlane/pdks/sky130A/libs.tech/klayout/sky130A.lyt
+[INFO] Reading Layout file: /openLANE_flow/designs/core/runs/core/results/cts/core.cts.def
+[INFO] Writing out PNG screenshot '/openLANE_flow/designs/core/runs/core/results/cts/core.cts.def.png'
+Done

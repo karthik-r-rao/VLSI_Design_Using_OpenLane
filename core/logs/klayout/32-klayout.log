@@ -1,0 +1,17 @@
+Using Techfile: /home/karthik/openlane/pdks/sky130A/libs.tech/klayout/sky130A.lyt
+Using DEF file: /openLANE_flow/designs/core/runs/core/results/routing/core.def
+Design Name: core
+Output GDS will be: /openLANE_flow/designs/core/runs/core/results/klayout/core.gds
+Extra GDSes:
+/home/karthik/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_ef_sc_hd__fakediode_2.gds /home/karthik/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds /home/karthik/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_ef_sc_hd__fill_12.gds
+[INFO] Clearing cells...
+[INFO] Merging GDS files...
+	/home/karthik/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_ef_sc_hd__fakediode_2.gds
+	/home/karthik/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+	/home/karthik/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_ef_sc_hd__fill_12.gds
+[INFO] Copying toplevel cell 'core'
+WARNING: no fill config file specified
+[INFO] Checking for missing GDS...
+[INFO] All LEF cells have matching GDS cells
+[INFO] Writing out GDS '/openLANE_flow/designs/core/runs/core/results/klayout/core.gds'
+Done

@@ -1,0 +1,48 @@
+OpenROAD 0.9.0 1415572a73
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+Warning: /openLANE_flow/designs/core/runs/core/tmp/resizer.lib line 32, default_operating_condition ss_100C_1v60 not found.
+Notice 0: Reading LEF file:  /openLANE_flow/designs/core/runs/core/tmp/merged_unpadded.lef
+Notice 0:     Created 13 technology layers
+Notice 0:     Created 25 technology vias
+Notice 0:     Created 439 library cells
+Notice 0: Finished LEF file:  /openLANE_flow/designs/core/runs/core/tmp/merged_unpadded.lef
+Notice 0: 
+Reading DEF file: /openLANE_flow/designs/core/runs/core/tmp/placement/8-replace.def
+Notice 0: Design: core
+Notice 0:     Created 170 pins.
+Notice 0:     Created 11138 components and 68214 component-terminals.
+Notice 0:     Created 2 special nets and 0 connections.
+Notice 0:     Created 8634 nets and 28186 connections.
+Notice 0: Finished DEF file: /openLANE_flow/designs/core/runs/core/tmp/placement/8-replace.def
+[INFO RSZ-0034] Found 19 slew violations.
+[INFO RSZ-0036] Found 19 capacitance violations.
+[INFO RSZ-0038] Inserted 54 buffers in 19 nets.
+[INFO RSZ-0039] Resized 6119 instances.
+Design Stats
+--------------------------------
+total instances         11192
+multi row instances         0
+fixed instances          2570
+nets                     8690
+design area          176113.9 u^2
+fixed area             3986.3 u^2
+movable area          84701.2 u^2
+utilization                49 %
+utilization padded         80 %
+rows                      154
+row height                2.7 u
+
+Placement Analysis
+--------------------------------
+total displacement    67934.2 u
+average displacement      6.1 u
+max displacement        190.9 u
+original HPWL        323651.6 u
+legalized HPWL       398132.0 u
+delta HPWL                 23 %
+
+[INFO DPL-0020] Mirrored 3871 instances
+[INFO DPL-0021] HPWL before          398132.0 u
+[INFO DPL-0022] HPWL after           390302.7 u
+[INFO DPL-0023] HPWL delta               -2.0 %

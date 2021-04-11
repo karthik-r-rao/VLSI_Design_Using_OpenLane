@@ -28,7 +28,7 @@ module core(
     input [31:0] rdata,                                     // read data
     output [31:0] data_address,                             // address for read and write (data)
     output[31:0] wdata,                                     // write data
-    output [3:0] wstrobe,                                   // strobe for byte accesses
+    output [3:0] wstrobe,                                   // strobe for byte stores
     output wen,                                             // write enable (data)
     output ren                                              // read enable (data)
     );

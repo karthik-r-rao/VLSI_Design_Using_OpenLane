@@ -1,0 +1,2889 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Wolf <claire@symbioticeda.com>          |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.9+3621 (git sha1 84e9fa7, gcc 8.3.1 -fPIC -Os)
+
+[TCL: yosys -import] Command name collision: found pre-existing command `cd' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `eval' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `exec' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `read' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `trace' -> skip.
+
+1. Executing Verilog-2005 frontend: /openLANE_flow/designs/core/src/check_dependency.v
+Parsing SystemVerilog input from `/openLANE_flow/designs/core/src/check_dependency.v' to AST representation.
+Generating RTLIL representation for module `\check_dependency'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: /openLANE_flow/designs/core/src/execute.v
+Parsing SystemVerilog input from `/openLANE_flow/designs/core/src/execute.v' to AST representation.
+Generating RTLIL representation for module `\execute'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: /openLANE_flow/designs/core/src/regfile.v
+Parsing SystemVerilog input from `/openLANE_flow/designs/core/src/regfile.v' to AST representation.
+Generating RTLIL representation for module `\regfile'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: /openLANE_flow/designs/core/src/bitwise_xor.v
+Parsing SystemVerilog input from `/openLANE_flow/designs/core/src/bitwise_xor.v' to AST representation.
+Generating RTLIL representation for module `\bitwise_xor'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: /openLANE_flow/designs/core/src/equal.v
+Parsing SystemVerilog input from `/openLANE_flow/designs/core/src/equal.v' to AST representation.
+Generating RTLIL representation for module `\equal'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: /openLANE_flow/designs/core/src/shift_arith_right.v
+Parsing SystemVerilog input from `/openLANE_flow/designs/core/src/shift_arith_right.v' to AST representation.
+Generating RTLIL representation for module `\shift_arith_right'.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: /openLANE_flow/designs/core/src/alu.v
+Parsing SystemVerilog input from `/openLANE_flow/designs/core/src/alu.v' to AST representation.
+Generating RTLIL representation for module `\alu'.
+Successfully finished Verilog frontend.
+
+8. Executing Verilog-2005 frontend: /openLANE_flow/designs/core/src/decode.v
+Parsing SystemVerilog input from `/openLANE_flow/designs/core/src/decode.v' to AST representation.
+Generating RTLIL representation for module `\decode'.
+Successfully finished Verilog frontend.
+
+9. Executing Verilog-2005 frontend: /openLANE_flow/designs/core/src/shift_logical_left.v
+Parsing SystemVerilog input from `/openLANE_flow/designs/core/src/shift_logical_left.v' to AST representation.
+Generating RTLIL representation for module `\shift_logical_left'.
+Successfully finished Verilog frontend.
+
+10. Executing Verilog-2005 frontend: /openLANE_flow/designs/core/src/slt.v
+Parsing SystemVerilog input from `/openLANE_flow/designs/core/src/slt.v' to AST representation.
+Generating RTLIL representation for module `\slt'.
+Successfully finished Verilog frontend.
+
+11. Executing Verilog-2005 frontend: /openLANE_flow/designs/core/src/memory_access.v
+Parsing SystemVerilog input from `/openLANE_flow/designs/core/src/memory_access.v' to AST representation.
+Generating RTLIL representation for module `\memory_access'.
+Successfully finished Verilog frontend.
+
+12. Executing Verilog-2005 frontend: /openLANE_flow/designs/core/src/core.v
+Parsing SystemVerilog input from `/openLANE_flow/designs/core/src/core.v' to AST representation.
+Generating RTLIL representation for module `\core'.
+Successfully finished Verilog frontend.
+
+13. Executing Verilog-2005 frontend: /openLANE_flow/designs/core/src/alu_cu.v
+Parsing SystemVerilog input from `/openLANE_flow/designs/core/src/alu_cu.v' to AST representation.
+Generating RTLIL representation for module `\alu_cu'.
+Successfully finished Verilog frontend.
+
+14. Executing Verilog-2005 frontend: /openLANE_flow/designs/core/src/shift_logical_right.v
+Parsing SystemVerilog input from `/openLANE_flow/designs/core/src/shift_logical_right.v' to AST representation.
+Generating RTLIL representation for module `\shift_logical_right'.
+Successfully finished Verilog frontend.
+
+15. Executing Verilog-2005 frontend: /openLANE_flow/designs/core/src/sltu.v
+Parsing SystemVerilog input from `/openLANE_flow/designs/core/src/sltu.v' to AST representation.
+Generating RTLIL representation for module `\sltu'.
+Successfully finished Verilog frontend.
+
+16. Executing Verilog-2005 frontend: /openLANE_flow/designs/core/src/bitwise_and.v
+Parsing SystemVerilog input from `/openLANE_flow/designs/core/src/bitwise_and.v' to AST representation.
+Generating RTLIL representation for module `\bitwise_and'.
+Successfully finished Verilog frontend.
+
+17. Executing Verilog-2005 frontend: /openLANE_flow/designs/core/src/branch_unit.v
+Parsing SystemVerilog input from `/openLANE_flow/designs/core/src/branch_unit.v' to AST representation.
+Generating RTLIL representation for module `\branch_unit'.
+Successfully finished Verilog frontend.
+
+18. Executing Verilog-2005 frontend: /openLANE_flow/designs/core/src/writeback.v
+Parsing SystemVerilog input from `/openLANE_flow/designs/core/src/writeback.v' to AST representation.
+Generating RTLIL representation for module `\writeback'.
+Successfully finished Verilog frontend.
+
+19. Executing Verilog-2005 frontend: /openLANE_flow/designs/core/src/bitwise_or.v
+Parsing SystemVerilog input from `/openLANE_flow/designs/core/src/bitwise_or.v' to AST representation.
+Generating RTLIL representation for module `\bitwise_or'.
+Successfully finished Verilog frontend.
+
+20. Executing Verilog-2005 frontend: /openLANE_flow/designs/core/src/adder.v
+Parsing SystemVerilog input from `/openLANE_flow/designs/core/src/adder.v' to AST representation.
+Generating RTLIL representation for module `\adder'.
+Successfully finished Verilog frontend.
+
+21. Generating Graphviz representation of design.
+Writing dot description to `/openLANE_flow/designs/core/runs/core/tmp/synthesis/hierarchy.dot'.
+Dumping module core to page 1.
+
+22. Executing HIERARCHY pass (managing design hierarchy).
+
+22.1. Analyzing design hierarchy..
+Top module:  \core
+Used module:     \memory_access
+Used module:     \check_dependency
+Used module:     \writeback
+Used module:     \regfile
+Used module:     \execute
+Used module:         \alu
+Used module:             \branch_unit
+Used module:             \equal
+Used module:             \shift_arith_right
+Used module:             \shift_logical_right
+Used module:             \shift_logical_left
+Used module:             \sltu
+Used module:             \slt
+Used module:             \adder
+Used module:             \bitwise_xor
+Used module:             \bitwise_or
+Used module:             \bitwise_and
+Used module:         \alu_cu
+Used module:     \decode
+
+22.2. Analyzing design hierarchy..
+Top module:  \core
+Used module:     \memory_access
+Used module:     \check_dependency
+Used module:     \writeback
+Used module:     \regfile
+Used module:     \execute
+Used module:         \alu
+Used module:             \branch_unit
+Used module:             \equal
+Used module:             \shift_arith_right
+Used module:             \shift_logical_right
+Used module:             \shift_logical_left
+Used module:             \sltu
+Used module:             \slt
+Used module:             \adder
+Used module:             \bitwise_xor
+Used module:             \bitwise_or
+Used module:             \bitwise_and
+Used module:         \alu_cu
+Used module:     \decode
+Removed 0 unused modules.
+
+23. Executing TRIBUF pass.
+
+24. Executing SYNTH pass.
+
+24.1. Executing HIERARCHY pass (managing design hierarchy).
+
+24.1.1. Analyzing design hierarchy..
+Top module:  \core
+Used module:     \memory_access
+Used module:     \check_dependency
+Used module:     \writeback
+Used module:     \regfile
+Used module:     \execute
+Used module:         \alu
+Used module:             \branch_unit
+Used module:             \equal
+Used module:             \shift_arith_right
+Used module:             \shift_logical_right
+Used module:             \shift_logical_left
+Used module:             \sltu
+Used module:             \slt
+Used module:             \adder
+Used module:             \bitwise_xor
+Used module:             \bitwise_or
+Used module:             \bitwise_and
+Used module:         \alu_cu
+Used module:     \decode
+
+24.1.2. Analyzing design hierarchy..
+Top module:  \core
+Used module:     \memory_access
+Used module:     \check_dependency
+Used module:     \writeback
+Used module:     \regfile
+Used module:     \execute
+Used module:         \alu
+Used module:             \branch_unit
+Used module:             \equal
+Used module:             \shift_arith_right
+Used module:             \shift_logical_right
+Used module:             \shift_logical_left
+Used module:             \sltu
+Used module:             \slt
+Used module:             \adder
+Used module:             \bitwise_xor
+Used module:             \bitwise_or
+Used module:             \bitwise_and
+Used module:         \alu_cu
+Used module:     \decode
+Removed 0 unused modules.
+
+24.2. Executing PROC pass (convert processes to netlists).
+
+24.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+24.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$/openLANE_flow/designs/core/src/writeback.v:15$72 in module writeback.
+Marked 1 switch rules as full_case in process $proc$/openLANE_flow/designs/core/src/branch_unit.v:13$62 in module branch_unit.
+Removed 2 dead cases from process $proc$/openLANE_flow/designs/core/src/alu_cu.v:19$57 in module alu_cu.
+Marked 6 switch rules as full_case in process $proc$/openLANE_flow/designs/core/src/alu_cu.v:19$57 in module alu_cu.
+Marked 1 switch rules as full_case in process $proc$/openLANE_flow/designs/core/src/core.v:180$52 in module core.
+Marked 5 switch rules as full_case in process $proc$/openLANE_flow/designs/core/src/core.v:152$44 in module core.
+Marked 2 switch rules as full_case in process $proc$/openLANE_flow/designs/core/src/core.v:132$41 in module core.
+Marked 3 switch rules as full_case in process $proc$/openLANE_flow/designs/core/src/memory_access.v:18$36 in module memory_access.
+Removed 1 dead cases from process $proc$/openLANE_flow/designs/core/src/decode.v:25$32 in module decode.
+Marked 3 switch rules as full_case in process $proc$/openLANE_flow/designs/core/src/decode.v:25$32 in module decode.
+Marked 1 switch rules as full_case in process $proc$/openLANE_flow/designs/core/src/alu.v:76$31 in module alu.
+Marked 5 switch rules as full_case in process $proc$/openLANE_flow/designs/core/src/check_dependency.v:47$11 in module check_dependency.
+Marked 1 switch rules as full_case in process $proc$/openLANE_flow/designs/core/src/check_dependency.v:39$6 in module check_dependency.
+Marked 1 switch rules as full_case in process $proc$/openLANE_flow/designs/core/src/check_dependency.v:31$1 in module check_dependency.
+Removed a total of 3 dead cases.
+
+24.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 10 redundant assignments.
+Promoted 22 assignments to connections.
+
+24.2.4. Executing PROC_INIT pass (extract init attributes).
+
+24.2.5. Executing PROC_ARST pass (detect async resets in processes).
+
+24.2.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\writeback.$proc$/openLANE_flow/designs/core/src/writeback.v:15$72'.
+     1/1: $1\w_en[0:0]
+Creating decoders for process `\branch_unit.$proc$/openLANE_flow/designs/core/src/branch_unit.v:13$62'.
+     1/1: $1\branch_taken[0:0]
+Creating decoders for process `\alu_cu.$proc$/openLANE_flow/designs/core/src/alu_cu.v:19$57'.
+     1/18: $6\branch[0:0]
+     2/18: $6\cin[0:0]
+     3/18: $6\alusel[3:0]
+     4/18: $5\branch[0:0]
+     5/18: $5\cin[0:0]
+     6/18: $5\alusel[3:0]
+     7/18: $4\branch[0:0]
+     8/18: $4\cin[0:0]
+     9/18: $4\alusel[3:0]
+    10/18: $3\branch[0:0]
+    11/18: $3\cin[0:0]
+    12/18: $3\alusel[3:0]
+    13/18: $2\cin[0:0]
+    14/18: $2\alusel[3:0]
+    15/18: $2\branch[0:0]
+    16/18: $1\cin[0:0]
+    17/18: $1\alusel[3:0]
+    18/18: $1\branch[0:0]
+Creating decoders for process `\core.$proc$/openLANE_flow/designs/core/src/core.v:199$55'.
+Creating decoders for process `\core.$proc$/openLANE_flow/designs/core/src/core.v:180$52'.
+     1/4: $0\MEM_X_ADDR[31:0]
+     2/4: $0\MEM_X_BRANCH_TAKEN[0:0]
+     3/4: $0\MEM_X_ALUOUT[31:0]
+     4/4: $0\MEM_X_INST[31:0]
+Creating decoders for process `\core.$proc$/openLANE_flow/designs/core/src/core.v:173$51'.
+Creating decoders for process `\core.$proc$/openLANE_flow/designs/core/src/core.v:152$44'.
+     1/4: $0\X_ID_OFFSET[31:0]
+     2/4: $0\X_ID_OP2[31:0]
+     3/4: $0\X_ID_OP1[31:0]
+     4/4: $0\X_ID_INST[31:0]
+Creating decoders for process `\core.$proc$/openLANE_flow/designs/core/src/core.v:132$41'.
+     1/2: $0\next_pc[31:0]
+     2/2: $0\ID_IF_PC[31:0]
+Creating decoders for process `\memory_access.$proc$/openLANE_flow/designs/core/src/memory_access.v:18$36'.
+     1/5: $3\wstrobe[3:0]
+     2/5: $2\wstrobe[3:0]
+     3/5: $1\wstrobe[3:0]
+     4/5: $1\ren[0:0]
+     5/5: $1\wen[0:0]
+Creating decoders for process `\decode.$proc$/openLANE_flow/designs/core/src/decode.v:25$32'.
+     1/6: $3\imm[11:0]
+     2/6: $3\sel[0:0]
+     3/6: $2\imm[11:0]
+     4/6: $2\sel[0:0]
+     5/6: $1\imm[11:0]
+     6/6: $1\sel[0:0]
+Creating decoders for process `\alu.$proc$/openLANE_flow/designs/core/src/alu.v:76$31'.
+     1/1: $1\out[31:0]
+Creating decoders for process `\regfile.$proc$/openLANE_flow/designs/core/src/regfile.v:20$22'.
+     1/3: $0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN[31:0]$25
+     2/3: $0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_DATA[31:0]$24
+     3/3: $0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_ADDR[4:0]$23
+Creating decoders for process `\check_dependency.$proc$/openLANE_flow/designs/core/src/check_dependency.v:47$11'.
+     1/6: $5\dep_place[3:0] [3]
+     2/6: $5\dep_place[3:0] [2:0]
+     3/6: $4\dep_place[2:2]
+     4/6: $3\dep_place[1:1]
+     5/6: $2\dep_place[0:0]
+     6/6: $1\dep_place[3:0]
+Creating decoders for process `\check_dependency.$proc$/openLANE_flow/designs/core/src/check_dependency.v:39$6'.
+     1/1: $1\dep_flag2[0:0]
+Creating decoders for process `\check_dependency.$proc$/openLANE_flow/designs/core/src/check_dependency.v:31$1'.
+     1/1: $1\dep_flag1[0:0]
+
+24.2.7. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\writeback.\w_en' from process `\writeback.$proc$/openLANE_flow/designs/core/src/writeback.v:15$72'.
+No latch inferred for signal `\branch_unit.\branch_taken' from process `\branch_unit.$proc$/openLANE_flow/designs/core/src/branch_unit.v:13$62'.
+No latch inferred for signal `\alu_cu.\branch' from process `\alu_cu.$proc$/openLANE_flow/designs/core/src/alu_cu.v:19$57'.
+No latch inferred for signal `\alu_cu.\alusel' from process `\alu_cu.$proc$/openLANE_flow/designs/core/src/alu_cu.v:19$57'.
+No latch inferred for signal `\alu_cu.\cin' from process `\alu_cu.$proc$/openLANE_flow/designs/core/src/alu_cu.v:19$57'.
+No latch inferred for signal `\memory_access.\wstrobe' from process `\memory_access.$proc$/openLANE_flow/designs/core/src/memory_access.v:18$36'.
+No latch inferred for signal `\memory_access.\wen' from process `\memory_access.$proc$/openLANE_flow/designs/core/src/memory_access.v:18$36'.
+No latch inferred for signal `\memory_access.\ren' from process `\memory_access.$proc$/openLANE_flow/designs/core/src/memory_access.v:18$36'.
+No latch inferred for signal `\decode.\imm' from process `\decode.$proc$/openLANE_flow/designs/core/src/decode.v:25$32'.
+No latch inferred for signal `\decode.\sel' from process `\decode.$proc$/openLANE_flow/designs/core/src/decode.v:25$32'.
+No latch inferred for signal `\alu.\out' from process `\alu.$proc$/openLANE_flow/designs/core/src/alu.v:76$31'.
+No latch inferred for signal `\check_dependency.\dep_flag' from process `\check_dependency.$proc$/openLANE_flow/designs/core/src/check_dependency.v:47$11'.
+No latch inferred for signal `\check_dependency.\dep_place [3]' from process `\check_dependency.$proc$/openLANE_flow/designs/core/src/check_dependency.v:47$11'.
+Latch inferred for signal `\check_dependency.\dep_place [0]' from process `\check_dependency.$proc$/openLANE_flow/designs/core/src/check_dependency.v:47$11': $auto$proc_dlatch.cc:430:proc_dlatch$580
+Latch inferred for signal `\check_dependency.\dep_place [1]' from process `\check_dependency.$proc$/openLANE_flow/designs/core/src/check_dependency.v:47$11': $auto$proc_dlatch.cc:430:proc_dlatch$615
+Latch inferred for signal `\check_dependency.\dep_place [2]' from process `\check_dependency.$proc$/openLANE_flow/designs/core/src/check_dependency.v:47$11': $auto$proc_dlatch.cc:430:proc_dlatch$650
+No latch inferred for signal `\check_dependency.\dep_flag2' from process `\check_dependency.$proc$/openLANE_flow/designs/core/src/check_dependency.v:39$6'.
+No latch inferred for signal `\check_dependency.\dep_flag1' from process `\check_dependency.$proc$/openLANE_flow/designs/core/src/check_dependency.v:31$1'.
+
+24.2.8. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\core.\WB_MEM_PC' using process `\core.$proc$/openLANE_flow/designs/core/src/core.v:199$55'.
+  created $dff cell `$procdff$651' with positive edge clock.
+Creating register for signal `\core.\WB_MEM_INST' using process `\core.$proc$/openLANE_flow/designs/core/src/core.v:199$55'.
+  created $dff cell `$procdff$652' with positive edge clock.
+Creating register for signal `\core.\WB_MEM_OUT' using process `\core.$proc$/openLANE_flow/designs/core/src/core.v:199$55'.
+  created $dff cell `$procdff$653' with positive edge clock.
+Creating register for signal `\core.\MEM_X_ADDR' using process `\core.$proc$/openLANE_flow/designs/core/src/core.v:180$52'.
+  created $dff cell `$procdff$654' with positive edge clock.
+Creating register for signal `\core.\MEM_X_INST' using process `\core.$proc$/openLANE_flow/designs/core/src/core.v:180$52'.
+  created $dff cell `$procdff$655' with positive edge clock.
+Creating register for signal `\core.\MEM_X_ALUOUT' using process `\core.$proc$/openLANE_flow/designs/core/src/core.v:180$52'.
+  created $dff cell `$procdff$656' with positive edge clock.
+Creating register for signal `\core.\MEM_X_PC' using process `\core.$proc$/openLANE_flow/designs/core/src/core.v:180$52'.
+  created $dff cell `$procdff$657' with positive edge clock.
+Creating register for signal `\core.\MEM_X_BRANCH_TAKEN' using process `\core.$proc$/openLANE_flow/designs/core/src/core.v:180$52'.
+  created $dff cell `$procdff$658' with positive edge clock.
+Creating register for signal `\core.\DEP_PLACE' using process `\core.$proc$/openLANE_flow/designs/core/src/core.v:173$51'.
+  created $dff cell `$procdff$659' with negative edge clock.
+Creating register for signal `\core.\X_ID_INST' using process `\core.$proc$/openLANE_flow/designs/core/src/core.v:152$44'.
+  created $dff cell `$procdff$660' with positive edge clock.
+Creating register for signal `\core.\X_ID_OP1' using process `\core.$proc$/openLANE_flow/designs/core/src/core.v:152$44'.
+  created $dff cell `$procdff$661' with positive edge clock.
+Creating register for signal `\core.\X_ID_OP2' using process `\core.$proc$/openLANE_flow/designs/core/src/core.v:152$44'.
+  created $dff cell `$procdff$662' with positive edge clock.
+Creating register for signal `\core.\X_ID_OFFSET' using process `\core.$proc$/openLANE_flow/designs/core/src/core.v:152$44'.
+  created $dff cell `$procdff$663' with positive edge clock.
+Creating register for signal `\core.\X_ID_PC' using process `\core.$proc$/openLANE_flow/designs/core/src/core.v:152$44'.
+  created $dff cell `$procdff$664' with positive edge clock.
+Creating register for signal `\core.\ID_IF_INST' using process `\core.$proc$/openLANE_flow/designs/core/src/core.v:132$41'.
+  created $dff cell `$procdff$665' with positive edge clock.
+Creating register for signal `\core.\ID_IF_PC' using process `\core.$proc$/openLANE_flow/designs/core/src/core.v:132$41'.
+  created $dff cell `$procdff$666' with positive edge clock.
+Creating register for signal `\core.\next_pc' using process `\core.$proc$/openLANE_flow/designs/core/src/core.v:132$41'.
+  created $dff cell `$procdff$667' with positive edge clock.
+Creating register for signal `\regfile.$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_ADDR' using process `\regfile.$proc$/openLANE_flow/designs/core/src/regfile.v:20$22'.
+  created $dff cell `$procdff$668' with negative edge clock.
+Creating register for signal `\regfile.$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_DATA' using process `\regfile.$proc$/openLANE_flow/designs/core/src/regfile.v:20$22'.
+  created $dff cell `$procdff$669' with negative edge clock.
+Creating register for signal `\regfile.$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN' using process `\regfile.$proc$/openLANE_flow/designs/core/src/regfile.v:20$22'.
+  created $dff cell `$procdff$670' with negative edge clock.
+
+24.2.9. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\writeback.$proc$/openLANE_flow/designs/core/src/writeback.v:15$72'.
+Removing empty process `writeback.$proc$/openLANE_flow/designs/core/src/writeback.v:15$72'.
+Found and cleaned up 1 empty switch in `\branch_unit.$proc$/openLANE_flow/designs/core/src/branch_unit.v:13$62'.
+Removing empty process `branch_unit.$proc$/openLANE_flow/designs/core/src/branch_unit.v:13$62'.
+Found and cleaned up 6 empty switches in `\alu_cu.$proc$/openLANE_flow/designs/core/src/alu_cu.v:19$57'.
+Removing empty process `alu_cu.$proc$/openLANE_flow/designs/core/src/alu_cu.v:19$57'.
+Removing empty process `core.$proc$/openLANE_flow/designs/core/src/core.v:199$55'.
+Found and cleaned up 1 empty switch in `\core.$proc$/openLANE_flow/designs/core/src/core.v:180$52'.
+Removing empty process `core.$proc$/openLANE_flow/designs/core/src/core.v:180$52'.
+Removing empty process `core.$proc$/openLANE_flow/designs/core/src/core.v:173$51'.
+Found and cleaned up 5 empty switches in `\core.$proc$/openLANE_flow/designs/core/src/core.v:152$44'.
+Removing empty process `core.$proc$/openLANE_flow/designs/core/src/core.v:152$44'.
+Found and cleaned up 2 empty switches in `\core.$proc$/openLANE_flow/designs/core/src/core.v:132$41'.
+Removing empty process `core.$proc$/openLANE_flow/designs/core/src/core.v:132$41'.
+Found and cleaned up 3 empty switches in `\memory_access.$proc$/openLANE_flow/designs/core/src/memory_access.v:18$36'.
+Removing empty process `memory_access.$proc$/openLANE_flow/designs/core/src/memory_access.v:18$36'.
+Found and cleaned up 3 empty switches in `\decode.$proc$/openLANE_flow/designs/core/src/decode.v:25$32'.
+Removing empty process `decode.$proc$/openLANE_flow/designs/core/src/decode.v:25$32'.
+Found and cleaned up 1 empty switch in `\alu.$proc$/openLANE_flow/designs/core/src/alu.v:76$31'.
+Removing empty process `alu.$proc$/openLANE_flow/designs/core/src/alu.v:76$31'.
+Found and cleaned up 1 empty switch in `\regfile.$proc$/openLANE_flow/designs/core/src/regfile.v:20$22'.
+Removing empty process `regfile.$proc$/openLANE_flow/designs/core/src/regfile.v:20$22'.
+Found and cleaned up 5 empty switches in `\check_dependency.$proc$/openLANE_flow/designs/core/src/check_dependency.v:47$11'.
+Removing empty process `check_dependency.$proc$/openLANE_flow/designs/core/src/check_dependency.v:47$11'.
+Found and cleaned up 1 empty switch in `\check_dependency.$proc$/openLANE_flow/designs/core/src/check_dependency.v:39$6'.
+Removing empty process `check_dependency.$proc$/openLANE_flow/designs/core/src/check_dependency.v:39$6'.
+Found and cleaned up 1 empty switch in `\check_dependency.$proc$/openLANE_flow/designs/core/src/check_dependency.v:31$1'.
+Removing empty process `check_dependency.$proc$/openLANE_flow/designs/core/src/check_dependency.v:31$1'.
+Cleaned up 31 empty switches.
+
+24.3. Executing FLATTEN pass (flatten design).
+Deleting now unused module adder.
+Deleting now unused module bitwise_or.
+Deleting now unused module writeback.
+Deleting now unused module branch_unit.
+Deleting now unused module bitwise_and.
+Deleting now unused module sltu.
+Deleting now unused module shift_logical_right.
+Deleting now unused module alu_cu.
+Deleting now unused module memory_access.
+Deleting now unused module slt.
+Deleting now unused module shift_logical_left.
+Deleting now unused module decode.
+Deleting now unused module alu.
+Deleting now unused module shift_arith_right.
+Deleting now unused module equal.
+Deleting now unused module bitwise_xor.
+Deleting now unused module regfile.
+Deleting now unused module execute.
+Deleting now unused module check_dependency.
+<suppressed ~19 debug messages>
+
+24.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module core.
+<suppressed ~70 debug messages>
+
+24.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \core..
+Removed 5 unused cells and 187 unused wires.
+<suppressed ~9 debug messages>
+
+24.6. Executing CHECK pass (checking for obvious problems).
+checking module core..
+found and reported 0 problems.
+
+24.7. Executing OPT pass (performing simple optimizations).
+
+24.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module core.
+
+24.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\core'.
+<suppressed ~354 debug messages>
+Removed a total of 118 cells.
+
+24.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \core..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $flatten\e1.\alucu1.$procmux$110.
+    dead port 2/2 on $mux $flatten\e1.\alucu1.$procmux$112.
+    dead port 2/2 on $mux $flatten\e1.\alucu1.$procmux$124.
+    dead port 2/2 on $mux $flatten\e1.\alucu1.$procmux$126.
+    dead port 2/2 on $mux $flatten\e1.\alucu1.$procmux$141.
+    dead port 2/2 on $mux $flatten\e1.\alucu1.$procmux$156.
+    dead port 2/2 on $mux $flatten\d1.$procmux$427.
+    dead port 2/2 on $mux $flatten\d1.$procmux$429.
+    dead port 2/2 on $mux $flatten\e1.\alucu1.$procmux$171.
+    dead port 2/2 on $mux $flatten\e1.\alucu1.$procmux$183.
+    dead port 2/2 on $mux $flatten\e1.\alucu1.$procmux$185.
+    dead port 2/2 on $mux $flatten\e1.\alucu1.$procmux$197.
+    dead port 2/2 on $mux $flatten\d1.$procmux$441.
+    dead port 2/2 on $mux $flatten\e1.\alucu1.$procmux$199.
+    dead port 2/2 on $mux $flatten\d1.$procmux$443.
+    dead port 2/2 on $mux $flatten\e1.\alucu1.$procmux$212.
+    dead port 2/2 on $mux $flatten\e1.\alucu1.$procmux$214.
+    dead port 2/2 on $mux $flatten\e1.\alucu1.$procmux$231.
+    dead port 2/2 on $mux $flatten\e1.\alucu1.$procmux$233.
+    dead port 2/2 on $mux $flatten\e1.\alucu1.$procmux$250.
+    dead port 2/2 on $mux $flatten\e1.\alucu1.$procmux$252.
+    dead port 2/2 on $mux $flatten\e1.\alucu1.$procmux$270.
+    dead port 2/2 on $mux $flatten\d1.$procmux$458.
+    dead port 2/2 on $mux $flatten\e1.\alucu1.$procmux$272.
+    dead port 2/2 on $mux $flatten\e1.\alucu1.$procmux$288.
+    dead port 2/2 on $mux $flatten\d1.$procmux$473.
+    dead port 2/2 on $mux $flatten\e1.\alucu1.$procmux$304.
+    dead port 2/2 on $mux $flatten\e1.\alucu1.$procmux$320.
+    dead port 2/2 on $mux $flatten\e1.\alucu1.$procmux$97.
+    dead port 2/2 on $mux $flatten\e1.\alucu1.$procmux$99.
+    dead port 2/2 on $mux $flatten\m1.$procmux$395.
+    dead port 2/2 on $mux $flatten\m1.$procmux$404.
+Removed 32 multiplexer ports.
+<suppressed ~31 debug messages>
+
+24.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \core.
+    New ctrl vector for $pmux cell $flatten\e1.\alucu1.$procmux$132: $auto$opt_reduce.cc:134:opt_mux$672
+    New ctrl vector for $pmux cell $flatten\e1.\alucu1.$procmux$147: { $auto$opt_reduce.cc:134:opt_mux$676 $auto$opt_reduce.cc:134:opt_mux$674 }
+    New ctrl vector for $pmux cell $flatten\d1.$procmux$424: $auto$opt_reduce.cc:134:opt_mux$678
+    New ctrl vector for $pmux cell $flatten\d1.$procmux$438: $auto$opt_reduce.cc:134:opt_mux$680
+    New ctrl vector for $pmux cell $flatten\d1.$procmux$449: { $flatten\d1.$procmux$456_CMP $flatten\d1.$procmux$428_CMP $auto$opt_reduce.cc:134:opt_mux$682 }
+    New ctrl vector for $pmux cell $flatten\e1.\alucu1.$procmux$279: { $flatten\e1.\alu1.\a11.$procmux$87_CMP $auto$opt_reduce.cc:134:opt_mux$686 $auto$opt_reduce.cc:134:opt_mux$684 }
+    New ctrl vector for $pmux cell $flatten\d1.$procmux$464: { $flatten\d1.$procmux$428_CMP $auto$opt_reduce.cc:134:opt_mux$688 }
+    New ctrl vector for $pmux cell $flatten\e1.\alucu1.$procmux$311: $auto$opt_reduce.cc:134:opt_mux$690
+    New ctrl vector for $pmux cell $flatten\e1.\alucu1.$procmux$330: { $flatten\e1.\alucu1.$procmux$186_CMP $flatten\e1.\alucu1.$procmux$100_CMP $auto$opt_reduce.cc:134:opt_mux$692 $flatten\e1.\alucu1.$procmux$331_CMP }
+    Consolidated identical input bits for $mux cell $flatten\r1.$procmux$499:
+      Old ports: A=0, B=32'11111111111111111111111111111111, Y=$flatten\r1.$0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN[31:0]$25
+      New ports: A=1'0, B=1'1, Y=$flatten\r1.$0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN[31:0]$25 [0]
+      New connections: $flatten\r1.$0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN[31:0]$25 [31:1] = { $flatten\r1.$0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN[31:0]$25 [0] $flatten\r1.$0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN[31:0]$25 [0] $flatten\r1.$0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN[31:0]$25 [0] $flatten\r1.$0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN[31:0]$25 [0] $flatten\r1.$0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN[31:0]$25 [0] $flatten\r1.$0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN[31:0]$25 [0] $flatten\r1.$0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN[31:0]$25 [0] $flatten\r1.$0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN[31:0]$25 [0] $flatten\r1.$0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN[31:0]$25 [0] $flatten\r1.$0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN[31:0]$25 [0] $flatten\r1.$0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN[31:0]$25 [0] $flatten\r1.$0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN[31:0]$25 [0] $flatten\r1.$0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN[31:0]$25 [0] $flatten\r1.$0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN[31:0]$25 [0] $flatten\r1.$0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN[31:0]$25 [0] $flatten\r1.$0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN[31:0]$25 [0] $flatten\r1.$0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN[31:0]$25 [0] $flatten\r1.$0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN[31:0]$25 [0] $flatten\r1.$0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN[31:0]$25 [0] $flatten\r1.$0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN[31:0]$25 [0] $flatten\r1.$0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN[31:0]$25 [0] $flatten\r1.$0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN[31:0]$25 [0] $flatten\r1.$0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN[31:0]$25 [0] $flatten\r1.$0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN[31:0]$25 [0] $flatten\r1.$0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN[31:0]$25 [0] $flatten\r1.$0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN[31:0]$25 [0] $flatten\r1.$0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN[31:0]$25 [0] $flatten\r1.$0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN[31:0]$25 [0] $flatten\r1.$0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN[31:0]$25 [0] $flatten\r1.$0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN[31:0]$25 [0] $flatten\r1.$0$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN[31:0]$25 [0] }
+  Optimizing cells in module \core.
+Performed a total of 10 changes.
+
+24.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\core'.
+<suppressed ~18 debug messages>
+Removed a total of 6 cells.
+
+24.7.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+24.7.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \core..
+Removed 0 unused cells and 155 unused wires.
+<suppressed ~1 debug messages>
+
+24.7.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module core.
+
+24.7.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+24.7.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \core..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~33 debug messages>
+
+24.7.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \core.
+    New ctrl vector for $pmux cell $flatten\e1.\alucu1.$procmux$337: { $auto$opt_reduce.cc:134:opt_mux$694 $flatten\e1.\alucu1.$procmux$331_CMP }
+  Optimizing cells in module \core.
+Performed a total of 1 changes.
+
+24.7.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\core'.
+Removed a total of 0 cells.
+
+24.7.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+24.7.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \core..
+
+24.7.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module core.
+
+24.7.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+24.7.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \core..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~33 debug messages>
+
+24.7.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \core.
+Performed a total of 0 changes.
+
+24.7.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\core'.
+Removed a total of 0 cells.
+
+24.7.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+24.7.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \core..
+
+24.7.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module core.
+
+24.7.23. Finished OPT passes. (There is nothing left to do.)
+
+24.8. Executing FSM pass (extract and optimize FSM).
+
+24.8.1. Executing FSM_DETECT pass (finding FSMs in design).
+Not marking core.$flatten\r1.$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:22$19_EN as FSM state register:
+    Users of register don't seem to benefit from recoding.
+
+24.8.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+24.8.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+24.8.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \core..
+
+24.8.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+24.8.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+24.8.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+24.8.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+24.9. Executing OPT pass (performing simple optimizations).
+
+24.9.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module core.
+
+24.9.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\core'.
+Removed a total of 0 cells.
+
+24.9.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \core..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~33 debug messages>
+
+24.9.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \core.
+Performed a total of 0 changes.
+
+24.9.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\core'.
+Removed a total of 0 cells.
+
+24.9.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $procdff$667 ($dff) from module core (D = $procmux$378_Y, Q = \next_pc, rval = 4).
+Adding SRST signal on $procdff$666 ($dff) from module core (D = $procmux$384_Y, Q = \ID_IF_PC, rval = 0).
+Adding SRST signal on $procdff$663 ($dff) from module core (D = { \imm [11] \imm [11] \imm [11] \imm [11] \imm [11] \imm [11] \imm [11] \imm [11] \imm [11] \imm [11] \imm [11] \imm [11] \imm [11] \imm [11] \imm [11] \imm [11] \imm [11] \imm [11] \imm [11] \imm [11] \imm }, Q = \X_ID_OFFSET, rval = 0).
+Adding SRST signal on $procdff$662 ($dff) from module core (D = $procmux$360_Y, Q = \X_ID_OP2, rval = 0).
+Adding SRST signal on $procdff$661 ($dff) from module core (D = $procmux$369_Y, Q = \X_ID_OP1, rval = 0).
+Adding SRST signal on $procdff$660 ($dff) from module core (D = \ID_IF_INST, Q = \X_ID_INST, rval = 19).
+Adding SRST signal on $procdff$659 ($dff) from module core (D = $flatten\c1.$5\dep_place[3:0] [3], Q = \DEP_PLACE [3], rval = 1'0).
+Adding SRST signal on $procdff$658 ($dff) from module core (D = $and$/openLANE_flow/designs/core/src/core.v:190$54_Y, Q = \MEM_X_BRANCH_TAKEN, rval = 1'0).
+Adding SRST signal on $procdff$656 ($dff) from module core (D = \memxaluout, Q = \MEM_X_ALUOUT, rval = 0).
+Adding SRST signal on $procdff$655 ($dff) from module core (D = \X_ID_INST, Q = \MEM_X_INST, rval = 19).
+Adding SRST signal on $procdff$654 ($dff) from module core (D = \memxaddr, Q = \MEM_X_ADDR, rval = 0).
+
+24.9.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \core..
+Removed 10 unused cells and 10 unused wires.
+<suppressed ~11 debug messages>
+
+24.9.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module core.
+
+24.9.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+24.9.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \core..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~28 debug messages>
+
+24.9.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \core.
+Performed a total of 0 changes.
+
+24.9.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\core'.
+Removed a total of 0 cells.
+
+24.9.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+24.9.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \core..
+
+24.9.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module core.
+
+24.9.16. Finished OPT passes. (There is nothing left to do.)
+
+24.10. Executing WREDUCE pass (reducing word size of cells).
+Removed top 29 bits (of 32) from port B of cell core.$add$/openLANE_flow/designs/core/src/core.v:139$42 ($add).
+Removed top 29 bits (of 32) from port B of cell core.$add$/openLANE_flow/designs/core/src/core.v:143$43 ($add).
+Removed top 20 bits (of 32) from FF cell core.$procdff$652 ($dff).
+Removed top 17 bits (of 32) from FF cell core.$auto$opt_dff.cc:702:run$704 ($sdff).
+Removed top 20 bits (of 32) from FF cell core.$auto$opt_dff.cc:702:run$697 ($sdff).
+Removed top 1 bits (of 7) from port B of cell core.$flatten\d1.$procmux$478_CMP0 ($eq).
+Removed top 2 bits (of 3) from port B of cell core.$flatten\d1.$procmux$456_CMP0 ($eq).
+Removed top 1 bits (of 3) from port B of cell core.$flatten\d1.$procmux$455_CMP0 ($eq).
+Removed top 1 bits (of 3) from port B of cell core.$flatten\d1.$procmux$454_CMP0 ($eq).
+Removed top 7 bits (of 12) from mux cell core.$flatten\d1.$procmux$424 ($mux).
+Removed top 1 bits (of 7) from port B of cell core.$flatten\d1.$procmux$425_CMP0 ($eq).
+Removed top 1 bits (of 33) from port A of cell core.$flatten\e1.\alu1.\a4.$xor$/openLANE_flow/designs/core/src/adder.v:11$74 ($xor).
+Removed top 1 bits (of 33) from port Y of cell core.$flatten\e1.\alu1.\a4.$xor$/openLANE_flow/designs/core/src/adder.v:11$74 ($xor).
+Removed top 1 bits (of 4) from port B of cell core.$flatten\e1.\alu1.$procmux$492_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell core.$flatten\e1.\alu1.$procmux$493_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell core.$flatten\e1.\alu1.$procmux$494_CMP0 ($eq).
+Removed top 2 bits (of 4) from port B of cell core.$flatten\e1.\alu1.$procmux$495_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell core.$flatten\e1.\alu1.$procmux$495_CMP1 ($eq).
+Removed top 2 bits (of 4) from port B of cell core.$flatten\e1.\alu1.$procmux$496_CMP0 ($eq).
+Removed top 3 bits (of 4) from port B of cell core.$flatten\e1.\alu1.$procmux$497_CMP0 ($eq).
+Removed top 1 bits (of 33) from port Y of cell core.$flatten\e1.\alu1.\a4.$add$/openLANE_flow/designs/core/src/adder.v:11$76 ($add).
+Removed top 1 bits (of 33) from port A of cell core.$flatten\e1.\alu1.\a4.$add$/openLANE_flow/designs/core/src/adder.v:11$76 ($add).
+Removed top 1 bits (of 33) from port B of cell core.$flatten\e1.\alu1.\a4.$add$/openLANE_flow/designs/core/src/adder.v:11$75 ($add).
+Removed top 1 bits (of 33) from port Y of cell core.$flatten\e1.\alu1.\a4.$add$/openLANE_flow/designs/core/src/adder.v:11$75 ($add).
+Removed top 31 bits (of 32) from mux cell core.$flatten\e1.\alu1.\a5.$ternary$/openLANE_flow/designs/core/src/slt.v:9$35 ($mux).
+Removed top 31 bits (of 32) from mux cell core.$flatten\e1.\alu1.\a6.$ternary$/openLANE_flow/designs/core/src/sltu.v:9$60 ($mux).
+Removed top 31 bits (of 32) from mux cell core.$flatten\e1.\alu1.\a10.$ternary$/openLANE_flow/designs/core/src/equal.v:9$29 ($mux).
+Removed top 2 bits (of 3) from port B of cell core.$flatten\e1.\alu1.\a11.$procmux$86_CMP0 ($eq).
+Removed top 31 bits (of 32) from port Y of cell core.$flatten\e1.\alu1.\a11.$and$/openLANE_flow/designs/core/src/branch_unit.v:20$71 ($and).
+Removed top 31 bits (of 32) from port A of cell core.$flatten\e1.\alu1.\a11.$and$/openLANE_flow/designs/core/src/branch_unit.v:20$71 ($and).
+Removed top 31 bits (of 32) from port A of cell core.$flatten\e1.\alu1.\a11.$not$/openLANE_flow/designs/core/src/branch_unit.v:20$70 ($not).
+Removed top 31 bits (of 32) from port Y of cell core.$flatten\e1.\alu1.\a11.$not$/openLANE_flow/designs/core/src/branch_unit.v:20$70 ($not).
+Removed top 31 bits (of 32) from port A of cell core.$flatten\e1.\alu1.\a11.$and$/openLANE_flow/designs/core/src/branch_unit.v:19$69 ($and).
+Removed top 31 bits (of 32) from port Y of cell core.$flatten\e1.\alu1.\a11.$and$/openLANE_flow/designs/core/src/branch_unit.v:19$69 ($and).
+Removed top 31 bits (of 32) from port Y of cell core.$flatten\e1.\alu1.\a11.$and$/openLANE_flow/designs/core/src/branch_unit.v:18$68 ($and).
+Removed top 31 bits (of 32) from port A of cell core.$flatten\e1.\alu1.\a11.$and$/openLANE_flow/designs/core/src/branch_unit.v:18$68 ($and).
+Removed top 31 bits (of 32) from port A of cell core.$flatten\e1.\alu1.\a11.$not$/openLANE_flow/designs/core/src/branch_unit.v:18$67 ($not).
+Removed top 31 bits (of 32) from port Y of cell core.$flatten\e1.\alu1.\a11.$not$/openLANE_flow/designs/core/src/branch_unit.v:18$67 ($not).
+Removed top 31 bits (of 32) from port A of cell core.$flatten\e1.\alu1.\a11.$and$/openLANE_flow/designs/core/src/branch_unit.v:17$66 ($and).
+Removed top 31 bits (of 32) from port Y of cell core.$flatten\e1.\alu1.\a11.$and$/openLANE_flow/designs/core/src/branch_unit.v:17$66 ($and).
+Removed top 2 bits (of 7) from port B of cell core.$flatten\e1.\alucu1.$procmux$100_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell core.$flatten\e1.\alucu1.$procmux$122_CMP0 ($eq).
+Removed cell core.$flatten\e1.\alucu1.$procmux$132 ($mux).
+Removed top 1 bits (of 3) from port B of cell core.$flatten\e1.\alucu1.$procmux$137_CMP0 ($eq).
+Removed top 1 bits (of 3) from port B of cell core.$flatten\e1.\alucu1.$procmux$138_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell core.$flatten\e1.\alucu1.$procmux$186_CMP0 ($eq).
+Removed top 1 bits (of 4) from mux cell core.$flatten\e1.\alucu1.$procmux$267 ($pmux).
+Removed top 1 bits (of 7) from port B of cell core.$flatten\e1.\alucu1.$procmux$332_CMP0 ($eq).
+Removed top 5 bits (of 7) from port B of cell core.$flatten\e1.\alucu1.$procmux$333_CMP0 ($eq).
+Removed top 31 bits (of 32) from FF cell core.$flatten\r1.$procdff$670 ($dff).
+Removed cell core.$flatten\r1.$procmux$503 ($mux).
+Removed cell core.$flatten\r1.$procmux$501 ($mux).
+Removed top 1 bits (of 7) from port B of cell core.$flatten\w1.$procmux$79_CMP2 ($eq).
+Removed top 2 bits (of 7) from port B of cell core.$flatten\w1.$procmux$79_CMP1 ($eq).
+Removed top 5 bits (of 7) from port B of cell core.$flatten\w1.$procmux$79_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell core.$flatten\c1.$procmux$541_CMP0 ($eq).
+Removed top 5 bits (of 7) from port B of cell core.$flatten\c1.$procmux$540_CMP1 ($eq).
+Removed top 2 bits (of 7) from port B of cell core.$flatten\c1.$procmux$540_CMP0 ($eq).
+Removed top 1 bits (of 4) from mux cell core.$flatten\c1.$procmux$536 ($mux).
+Removed top 1 bits (of 7) from port B of cell core.$flatten\m1.$procmux$405_CMP0 ($eq).
+Removed top 5 bits (of 7) from port B of cell core.$flatten\m1.$procmux$396_CMP0 ($eq).
+Removed top 1 bits (of 3) from port B of cell core.$flatten\m1.$procmux$394_CMP0 ($eq).
+Removed top 2 bits (of 3) from port B of cell core.$flatten\m1.$procmux$393_CMP0 ($eq).
+Removed top 3 bits (of 4) from port A of cell core.$flatten\m1.$shl$/openLANE_flow/designs/core/src/memory_access.v:25$38 ($shl).
+Removed top 1 bits (of 4) from wire core.$flatten\c1.$0\dep_place[3:0].
+Removed top 7 bits (of 12) from wire core.$flatten\d1.$3\imm[11:0].
+Removed top 31 bits (of 32) from wire core.$flatten\e1.\alu1.\a11.$and$/openLANE_flow/designs/core/src/branch_unit.v:17$66_Y.
+Removed top 31 bits (of 32) from wire core.$flatten\e1.\alu1.\a11.$and$/openLANE_flow/designs/core/src/branch_unit.v:18$68_Y.
+Removed top 31 bits (of 32) from wire core.$flatten\e1.\alu1.\a11.$not$/openLANE_flow/designs/core/src/branch_unit.v:18$67_Y.
+Removed top 1 bits (of 33) from wire core.$flatten\e1.\alu1.\a4.$add$/openLANE_flow/designs/core/src/adder.v:11$75_Y.
+Removed top 1 bits (of 33) from wire core.$flatten\e1.\alu1.\a4.$xor$/openLANE_flow/designs/core/src/adder.v:11$74_Y.
+Removed top 1 bits (of 4) from wire core.$flatten\e1.\alucu1.$3\alusel[3:0].
+Removed top 17 bits (of 32) from wire core.MEM_X_INST.
+Removed top 20 bits (of 32) from wire core.WB_MEM_INST.
+Removed top 1 bits (of 4) from wire core.dep_place.
+
+24.11. Executing PEEPOPT pass (run peephole optimizers).
+
+24.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \core..
+Removed 1 unused cells and 17 unused wires.
+<suppressed ~4 debug messages>
+
+24.13. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module core:
+  creating $macc model for $add$/openLANE_flow/designs/core/src/core.v:139$42 ($add).
+  creating $macc model for $add$/openLANE_flow/designs/core/src/core.v:143$43 ($add).
+  creating $macc model for $flatten\e1.$add$/openLANE_flow/designs/core/src/execute.v:34$18 ($add).
+  creating $macc model for $flatten\e1.\alu1.\a4.$add$/openLANE_flow/designs/core/src/adder.v:11$75 ($add).
+  creating $macc model for $flatten\e1.\alu1.\a4.$add$/openLANE_flow/designs/core/src/adder.v:11$76 ($add).
+  merging $macc model for $flatten\e1.\alu1.\a4.$add$/openLANE_flow/designs/core/src/adder.v:11$75 into $flatten\e1.\alu1.\a4.$add$/openLANE_flow/designs/core/src/adder.v:11$76.
+  creating $alu model for $macc $flatten\e1.\alu1.\a4.$add$/openLANE_flow/designs/core/src/adder.v:11$76.
+  creating $alu model for $macc $flatten\e1.$add$/openLANE_flow/designs/core/src/execute.v:34$18.
+  creating $alu model for $macc $add$/openLANE_flow/designs/core/src/core.v:143$43.
+  creating $alu model for $macc $add$/openLANE_flow/designs/core/src/core.v:139$42.
+  creating $alu model for $flatten\e1.\alu1.\a5.$lt$/openLANE_flow/designs/core/src/slt.v:9$34 ($lt): new $alu
+  creating $alu model for $flatten\e1.\alu1.\a6.$lt$/openLANE_flow/designs/core/src/sltu.v:9$59 ($lt): new $alu
+  creating $alu model for $flatten\e1.\alu1.\a10.$eq$/openLANE_flow/designs/core/src/equal.v:9$28 ($eq): merged with $flatten\e1.\alu1.\a6.$lt$/openLANE_flow/designs/core/src/sltu.v:9$59.
+  creating $alu cell for $flatten\e1.\alu1.\a6.$lt$/openLANE_flow/designs/core/src/sltu.v:9$59, $flatten\e1.\alu1.\a10.$eq$/openLANE_flow/designs/core/src/equal.v:9$28: $auto$alumacc.cc:485:replace_alu$719
+  creating $alu cell for $flatten\e1.\alu1.\a5.$lt$/openLANE_flow/designs/core/src/slt.v:9$34: $auto$alumacc.cc:485:replace_alu$730
+  creating $alu cell for $add$/openLANE_flow/designs/core/src/core.v:139$42: $auto$alumacc.cc:485:replace_alu$743
+  creating $alu cell for $add$/openLANE_flow/designs/core/src/core.v:143$43: $auto$alumacc.cc:485:replace_alu$746
+  creating $alu cell for $flatten\e1.$add$/openLANE_flow/designs/core/src/execute.v:34$18: $auto$alumacc.cc:485:replace_alu$749
+  creating $alu cell for $flatten\e1.\alu1.\a4.$add$/openLANE_flow/designs/core/src/adder.v:11$76: $auto$alumacc.cc:485:replace_alu$752
+  created 6 $alu and 0 $macc cells.
+
+24.14. Executing SHARE pass (SAT-based resource sharing).
+Found 5 cells in module core that may be considered for resource sharing.
+  Analyzing resource sharing options for $flatten\r1.$memrd$\regblock$/openLANE_flow/designs/core/src/regfile.v:18$21 ($memrd):
+    Found 1 activation_patterns using ctrl signal { \DEP_PLACE [3] \DEP_PLACE [1] \sel }.
+    Found 1 candidates: $flatten\r1.$memrd$\regblock$/openLANE_flow/designs/core/src/regfile.v:17$20
+    Analyzing resource sharing with $flatten\r1.$memrd$\regblock$/openLANE_flow/designs/core/src/regfile.v:17$20 ($memrd):
+      Found 1 activation_patterns using ctrl signal { \DEP_PLACE [2] \DEP_PLACE [0] }.
+      Activation pattern for cell $flatten\r1.$memrd$\regblock$/openLANE_flow/designs/core/src/regfile.v:18$21: { \DEP_PLACE [3] \DEP_PLACE [1] \sel } = 3'000
+      Activation pattern for cell $flatten\r1.$memrd$\regblock$/openLANE_flow/designs/core/src/regfile.v:17$20: { \DEP_PLACE [2] \DEP_PLACE [0] } = 2'00
+      Adding exclusive control bits: $flatten\d1.$procmux$456_CMP vs. $flatten\d1.$procmux$428_CMP
+      Adding exclusive control bits: $flatten\d1.$procmux$428_CMP vs. $auto$opt_reduce.cc:134:opt_mux$688
+      Size of SAT problem: 16 cells, 168 variables, 439 clauses
+      According to the SAT solver this pair of cells can not be shared.
+      Model from SAT solver: { \DEP_PLACE \sel } = 5'00000
+  Analyzing resource sharing options for $flatten\r1.$memrd$\regblock$/openLANE_flow/designs/core/src/regfile.v:17$20 ($memrd):
+    Found 1 activation_patterns using ctrl signal { \DEP_PLACE [2] \DEP_PLACE [0] }.
+    No candidates found.
+  Analyzing resource sharing options for $flatten\e1.\alu1.\a9.$sshr$/openLANE_flow/designs/core/src/shift_arith_right.v:9$30 ($sshr):
+    Found 1 activation_patterns using ctrl signal $flatten\e1.\alu1.$procmux$490_CMP.
+    No candidates found.
+  Analyzing resource sharing options for $flatten\e1.\alu1.\a8.$shr$/openLANE_flow/designs/core/src/shift_logical_right.v:9$58 ($shr):
+    Found 1 activation_patterns using ctrl signal $flatten\e1.\alu1.$procmux$491_CMP.
+    No candidates found.
+  Analyzing resource sharing options for $flatten\e1.\alu1.\a7.$shl$/openLANE_flow/designs/core/src/shift_logical_left.v:9$33 ($shl):
+    Found 1 activation_patterns using ctrl signal $flatten\e1.\alu1.$procmux$492_CMP.
+    No candidates found.
+
+24.15. Executing OPT pass (performing simple optimizations).
+
+24.15.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module core.
+<suppressed ~4 debug messages>
+
+24.15.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\core'.
+Removed a total of 0 cells.
+
+24.15.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \core..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~26 debug messages>
+
+24.15.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \core.
+    New ctrl vector for $pmux cell $flatten\e1.\alucu1.$procmux$337: $flatten\e1.\alucu1.$procmux$331_CMP
+  Optimizing cells in module \core.
+Performed a total of 1 changes.
+
+24.15.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\core'.
+Removed a total of 0 cells.
+
+24.15.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+24.15.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \core..
+Removed 4 unused cells and 9 unused wires.
+<suppressed ~5 debug messages>
+
+24.15.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module core.
+
+24.15.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+24.15.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \core..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~26 debug messages>
+
+24.15.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \core.
+Performed a total of 0 changes.
+
+24.15.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\core'.
+Removed a total of 0 cells.
+
+24.15.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+24.15.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \core..
+
+24.15.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module core.
+
+24.15.16. Finished OPT passes. (There is nothing left to do.)
+
+24.16. Executing MEMORY pass.
+
+24.16.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+24.16.2. Executing MEMORY_DFF pass (merging $dff cells to $memrd and $memwr).
+Checking cell `$flatten\r1.$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:0$26' in module `\core': merged $dff to cell.
+Checking cell `$flatten\r1.$memrd$\regblock$/openLANE_flow/designs/core/src/regfile.v:17$20' in module `\core': merged address $dff to cell.
+Checking cell `$flatten\r1.$memrd$\regblock$/openLANE_flow/designs/core/src/regfile.v:18$21' in module `\core': merged address $dff to cell.
+
+24.16.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \core..
+Removed 8 unused cells and 8 unused wires.
+<suppressed ~9 debug messages>
+
+24.16.4. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+24.16.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \core..
+
+24.16.6. Executing MEMORY_COLLECT pass (generating $mem cells).
+Collecting $memrd, $memwr and $meminit for memory `\r1.regblock' in module `\core':
+  $flatten\r1.$memwr$\regblock$/openLANE_flow/designs/core/src/regfile.v:0$26 ($memwr)
+  $flatten\r1.$memrd$\regblock$/openLANE_flow/designs/core/src/regfile.v:18$21 ($memrd)
+  $flatten\r1.$memrd$\regblock$/openLANE_flow/designs/core/src/regfile.v:17$20 ($memrd)
+
+24.17. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \core..
+
+24.18. Executing OPT pass (performing simple optimizations).
+
+24.18.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module core.
+<suppressed ~45 debug messages>
+
+24.18.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\core'.
+Removed a total of 0 cells.
+
+24.18.3. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $auto$opt_dff.cc:702:run$695 ($sdff) from module core (D = $procmux$378_Y [1:0], Q = \next_pc [1:0]).
+
+24.18.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \core..
+Removed 0 unused cells and 9 unused wires.
+<suppressed ~1 debug messages>
+
+24.18.5. Rerunning OPT passes. (Removed registers in this run.)
+
+24.18.6. Executing OPT_EXPR pass (perform const folding).
+Optimizing module core.
+<suppressed ~1 debug messages>
+
+24.18.7. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\core'.
+Removed a total of 0 cells.
+
+24.18.8. Executing OPT_DFF pass (perform DFF optimizations).
+
+24.18.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \core..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+24.18.10. Finished fast OPT passes.
+
+24.19. Executing MEMORY_MAP pass (converting $mem cells to logic and flip-flops).
+Mapping memory cell \r1.regblock in module \core:
+  created 32 $dff cells and 0 static cells of width 32.
+  read interface: 2 $dff and 62 $mux cells.
+  write interface: 32 write mux blocks.
+
+24.20. Executing OPT pass (performing simple optimizations).
+
+24.20.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module core.
+<suppressed ~10 debug messages>
+
+24.20.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\core'.
+Removed a total of 0 cells.
+
+24.20.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \core..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~48 debug messages>
+
+24.20.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \core.
+    Consolidated identical input bits for $mux cell $flatten\c1.$procmux$513:
+      Old ports: A=3'000, B=3'111, Y=$flatten\c1.$5\dep_place[3:0] [2:0]
+      New ports: A=1'0, B=1'1, Y=$flatten\c1.$5\dep_place[3:0] [0]
+      New connections: $flatten\c1.$5\dep_place[3:0] [2:1] = { $flatten\c1.$5\dep_place[3:0] [0] $flatten\c1.$5\dep_place[3:0] [0] }
+    Consolidated identical input bits for $pmux cell $flatten\e1.\alucu1.$procmux$209:
+      Old ports: A=4'0000, B=8'10001001, Y=$flatten\e1.\alucu1.$4\alusel[3:0]
+      New ports: A=2'00, B=4'1011, Y={ $flatten\e1.\alucu1.$4\alusel[3:0] [3] $flatten\e1.\alucu1.$4\alusel[3:0] [0] }
+      New connections: $flatten\e1.\alucu1.$4\alusel[3:0] [2:1] = 2'00
+    Consolidated identical input bits for $pmux cell $flatten\e1.\alucu1.$procmux$267:
+      Old ports: A=3'000, B=6'011100, Y=$auto$wreduce.cc:454:run$713 [2:0]
+      New ports: A=2'00, B=4'0110, Y={ $auto$wreduce.cc:454:run$713 [2] $auto$wreduce.cc:454:run$713 [0] }
+      New connections: $auto$wreduce.cc:454:run$713 [1] = $auto$wreduce.cc:454:run$713 [0]
+    Consolidated identical input bits for $mux cell $flatten\m1.$ternary$/openLANE_flow/designs/core/src/memory_access.v:24$37:
+      Old ports: A=4'0011, B=4'1100, Y=$flatten\m1.$ternary$/openLANE_flow/designs/core/src/memory_access.v:24$37_Y
+      New ports: A=2'01, B=2'10, Y={ $flatten\m1.$ternary$/openLANE_flow/designs/core/src/memory_access.v:24$37_Y [2] $flatten\m1.$ternary$/openLANE_flow/designs/core/src/memory_access.v:24$37_Y [0] }
+      New connections: { $flatten\m1.$ternary$/openLANE_flow/designs/core/src/memory_access.v:24$37_Y [3] $flatten\m1.$ternary$/openLANE_flow/designs/core/src/memory_access.v:24$37_Y [1] } = { $flatten\m1.$ternary$/openLANE_flow/designs/core/src/memory_access.v:24$37_Y [2] $flatten\m1.$ternary$/openLANE_flow/designs/core/src/memory_access.v:24$37_Y [0] }
+  Optimizing cells in module \core.
+    Consolidated identical input bits for $mux cell $flatten\c1.$procmux$536:
+      Old ports: A=3'000, B=$flatten\c1.$5\dep_place[3:0] [2:0], Y=$auto$wreduce.cc:454:run$706 [2:0]
+      New ports: A=1'0, B=$flatten\c1.$5\dep_place[3:0] [0], Y=$auto$wreduce.cc:454:run$706 [0]
+      New connections: $auto$wreduce.cc:454:run$706 [2:1] = { $auto$wreduce.cc:454:run$706 [0] $auto$wreduce.cc:454:run$706 [0] }
+  Optimizing cells in module \core.
+Performed a total of 5 changes.
+
+24.20.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\core'.
+Removed a total of 0 cells.
+
+24.20.6. Executing OPT_SHARE pass.
+    Found cells that share an operand and can be merged by moving the $pmux $flatten\e1.\alu1.\a11.$procmux$81 in front of them:
+        $flatten\e1.\alu1.\a11.$and$/openLANE_flow/designs/core/src/branch_unit.v:20$71
+        $flatten\e1.\alu1.\a11.$and$/openLANE_flow/designs/core/src/branch_unit.v:19$69
+        $flatten\e1.\alu1.\a11.$and$/openLANE_flow/designs/core/src/branch_unit.v:18$68
+        $flatten\e1.\alu1.\a11.$and$/openLANE_flow/designs/core/src/branch_unit.v:17$66
+        $flatten\e1.\alu1.\a11.$and$/openLANE_flow/designs/core/src/branch_unit.v:16$65
+        $flatten\e1.\alu1.\a11.$and$/openLANE_flow/designs/core/src/branch_unit.v:15$63
+
+    Found cells that share an operand and can be merged by moving the $mux $procmux$378 in front of them:
+        $auto$alumacc.cc:485:replace_alu$743
+        $auto$alumacc.cc:485:replace_alu$746
+
+24.20.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+24.20.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \core..
+Removed 0 unused cells and 113 unused wires.
+<suppressed ~1 debug messages>
+
+24.20.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module core.
+<suppressed ~3 debug messages>
+
+24.20.10. Rerunning OPT passes. (Maybe there is more to do..)
+
+24.20.11. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \core..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~49 debug messages>
+
+24.20.12. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \core.
+    New ctrl vector for $pmux cell $flatten\e1.\alu1.\a11.$procmux$81: $auto$opt_reduce.cc:134:opt_mux$1276
+    Consolidated identical input bits for $mux cell $procmux$378:
+      Old ports: A={ $auto$opt_share.cc:219:merge_operators$1270 2'xx }, B={ $auto$opt_share.cc:219:merge_operators$1270 \MEM_X_ADDR [1:0] }, Y=$procmux$378_Y
+      New ports: A=2'xx, B=\MEM_X_ADDR [1:0], Y=$procmux$378_Y [1:0]
+      New connections: $procmux$378_Y [31:2] = $auto$opt_share.cc:219:merge_operators$1270
+  Optimizing cells in module \core.
+Performed a total of 2 changes.
+
+24.20.13. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\core'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+24.20.14. Executing OPT_SHARE pass.
+
+24.20.15. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $memory\r1.regblock[9]$787 ($dff) from module core (D = \WB_MEM_OUT, Q = \r1.regblock[9]).
+Adding EN signal on $memory\r1.regblock[8]$785 ($dff) from module core (D = \WB_MEM_OUT, Q = \r1.regblock[8]).
+Adding EN signal on $memory\r1.regblock[7]$783 ($dff) from module core (D = \WB_MEM_OUT, Q = \r1.regblock[7]).
+Adding EN signal on $memory\r1.regblock[6]$781 ($dff) from module core (D = \WB_MEM_OUT, Q = \r1.regblock[6]).
+Adding EN signal on $memory\r1.regblock[5]$779 ($dff) from module core (D = \WB_MEM_OUT, Q = \r1.regblock[5]).
+Adding EN signal on $memory\r1.regblock[4]$777 ($dff) from module core (D = \WB_MEM_OUT, Q = \r1.regblock[4]).
+Adding EN signal on $memory\r1.regblock[3]$775 ($dff) from module core (D = \WB_MEM_OUT, Q = \r1.regblock[3]).
+Adding EN signal on $memory\r1.regblock[31]$831 ($dff) from module core (D = \WB_MEM_OUT, Q = \r1.regblock[31]).
+Adding EN signal on $memory\r1.regblock[30]$829 ($dff) from module core (D = \WB_MEM_OUT, Q = \r1.regblock[30]).
+Adding EN signal on $memory\r1.regblock[2]$773 ($dff) from module core (D = \WB_MEM_OUT, Q = \r1.regblock[2]).
+Adding EN signal on $memory\r1.regblock[29]$827 ($dff) from module core (D = \WB_MEM_OUT, Q = \r1.regblock[29]).
+Adding EN signal on $memory\r1.regblock[28]$825 ($dff) from module core (D = \WB_MEM_OUT, Q = \r1.regblock[28]).
+Adding EN signal on $memory\r1.regblock[27]$823 ($dff) from module core (D = \WB_MEM_OUT, Q = \r1.regblock[27]).
+Adding EN signal on $memory\r1.regblock[26]$821 ($dff) from module core (D = \WB_MEM_OUT, Q = \r1.regblock[26]).
+Adding EN signal on $memory\r1.regblock[25]$819 ($dff) from module core (D = \WB_MEM_OUT, Q = \r1.regblock[25]).
+Adding EN signal on $memory\r1.regblock[24]$817 ($dff) from module core (D = \WB_MEM_OUT, Q = \r1.regblock[24]).
+Adding EN signal on $memory\r1.regblock[23]$815 ($dff) from module core (D = \WB_MEM_OUT, Q = \r1.regblock[23]).
+Adding EN signal on $memory\r1.regblock[22]$813 ($dff) from module core (D = \WB_MEM_OUT, Q = \r1.regblock[22]).
+Adding EN signal on $memory\r1.regblock[21]$811 ($dff) from module core (D = \WB_MEM_OUT, Q = \r1.regblock[21]).
+Adding EN signal on $memory\r1.regblock[20]$809 ($dff) from module core (D = \WB_MEM_OUT, Q = \r1.regblock[20]).
+Adding EN signal on $memory\r1.regblock[1]$771 ($dff) from module core (D = \WB_MEM_OUT, Q = \r1.regblock[1]).
+Adding EN signal on $memory\r1.regblock[19]$807 ($dff) from module core (D = \WB_MEM_OUT, Q = \r1.regblock[19]).
+Adding EN signal on $memory\r1.regblock[18]$805 ($dff) from module core (D = \WB_MEM_OUT, Q = \r1.regblock[18]).
+Adding EN signal on $memory\r1.regblock[17]$803 ($dff) from module core (D = \WB_MEM_OUT, Q = \r1.regblock[17]).
+Adding EN signal on $memory\r1.regblock[16]$801 ($dff) from module core (D = \WB_MEM_OUT, Q = \r1.regblock[16]).
+Adding EN signal on $memory\r1.regblock[15]$799 ($dff) from module core (D = \WB_MEM_OUT, Q = \r1.regblock[15]).
+Adding EN signal on $memory\r1.regblock[14]$797 ($dff) from module core (D = \WB_MEM_OUT, Q = \r1.regblock[14]).
+Adding EN signal on $memory\r1.regblock[13]$795 ($dff) from module core (D = \WB_MEM_OUT, Q = \r1.regblock[13]).
+Adding EN signal on $memory\r1.regblock[12]$793 ($dff) from module core (D = \WB_MEM_OUT, Q = \r1.regblock[12]).
+Adding EN signal on $memory\r1.regblock[11]$791 ($dff) from module core (D = \WB_MEM_OUT, Q = \r1.regblock[11]).
+Adding EN signal on $memory\r1.regblock[10]$789 ($dff) from module core (D = \WB_MEM_OUT, Q = \r1.regblock[10]).
+Adding EN signal on $memory\r1.regblock[0]$769 ($dff) from module core (D = \WB_MEM_OUT, Q = \r1.regblock[0]).
+
+24.20.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \core..
+Removed 32 unused cells and 33 unused wires.
+<suppressed ~33 debug messages>
+
+24.20.17. Executing OPT_EXPR pass (perform const folding).
+Optimizing module core.
+<suppressed ~2 debug messages>
+
+24.20.18. Rerunning OPT passes. (Maybe there is more to do..)
+
+24.20.19. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \core..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~16 debug messages>
+
+24.20.20. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \core.
+Performed a total of 0 changes.
+
+24.20.21. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\core'.
+Removed a total of 0 cells.
+
+24.20.22. Executing OPT_SHARE pass.
+
+24.20.23. Executing OPT_DFF pass (perform DFF optimizations).
+
+24.20.24. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \core..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+24.20.25. Executing OPT_EXPR pass (perform const folding).
+Optimizing module core.
+
+24.20.26. Rerunning OPT passes. (Maybe there is more to do..)
+
+24.20.27. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \core..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~16 debug messages>
+
+24.20.28. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \core.
+Performed a total of 0 changes.
+
+24.20.29. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\core'.
+Removed a total of 0 cells.
+
+24.20.30. Executing OPT_SHARE pass.
+
+24.20.31. Executing OPT_DFF pass (perform DFF optimizations).
+
+24.20.32. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \core..
+
+24.20.33. Executing OPT_EXPR pass (perform const folding).
+Optimizing module core.
+
+24.20.34. Finished OPT passes. (There is nothing left to do.)
+
+24.21. Executing TECHMAP pass (map to technology primitives).
+
+24.21.1. Executing Verilog-2005 frontend: /build/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/build/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+24.21.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $xor.
+Using template $paramod\_90_alu\A_SIGNED=0\B_SIGNED=0\A_WIDTH=32\B_WIDTH=32\Y_WIDTH=32 for cells of type $alu.
+Using extmapper simplemap for cells of type $reduce_and.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $dff.
+Using extmapper simplemap for cells of type $sdff.
+Using extmapper simplemap for cells of type $dffe.
+Using extmapper simplemap for cells of type $eq.
+Using template $paramod\_90_pmux\WIDTH=12\S_WIDTH=2 for cells of type $pmux.
+Using template $paramod\_90_pmux\WIDTH=12\S_WIDTH=4 for cells of type $pmux.
+Using extmapper simplemap for cells of type $logic_not.
+Using template $paramod\_90_alu\A_SIGNED=0\B_SIGNED=0\A_WIDTH=1\B_WIDTH=30\Y_WIDTH=30 for cells of type $alu.
+Using template $paramod$constmap:4621fcf06a436d1e2a4080e2ed9866a7d07a6e07$paramod$887c9fe2c55be14c90171bd2ff359c086a0858d7\_90_shift_ops_shr_shl_sshl_sshr for cells of type $shl.
+Using template $paramod$constmap:4621fcf06a436d1e2a4080e2ed9866a7d07a6e07$paramod$770435fdf938ca78b5f1ecab2552fff9f675f686\_90_shift_ops_shr_shl_sshl_sshr for cells of type $shr.
+Using template $paramod$constmap:4621fcf06a436d1e2a4080e2ed9866a7d07a6e07$paramod$0c11a8b0f7bc0abe97ee32fac977a1bbaae6bdf7\_90_shift_ops_shr_shl_sshl_sshr for cells of type $sshr.
+Using template $paramod\_90_alu\A_SIGNED=1\B_SIGNED=1\A_WIDTH=32\B_WIDTH=32\Y_WIDTH=32 for cells of type $alu.
+Using template $paramod\_90_pmux\WIDTH=1\S_WIDTH=2 for cells of type $pmux.
+Using template $paramod\_90_pmux\WIDTH=32\S_WIDTH=10 for cells of type $pmux.
+Using extmapper simplemap for cells of type $reduce_or.
+Using extmapper simplemap for cells of type $not.
+Using template $paramod\_90_pmux\WIDTH=1\S_WIDTH=5 for cells of type $pmux.
+Using template $paramod\_90_pmux\WIDTH=2\S_WIDTH=2 for cells of type $pmux.
+Using template $paramod\_90_pmux\WIDTH=4\S_WIDTH=7 for cells of type $pmux.
+Using template $paramod\_90_pmux\WIDTH=4\S_WIDTH=4 for cells of type $pmux.
+Using extmapper simplemap for cells of type $sdffe.
+Using extmapper simplemap for cells of type $dlatch.
+Using extmapper simplemap for cells of type $logic_or.
+Using template $paramod$constmap:66d421c313e4e958be776b99540ac2de3b59fdbc$paramod$9b74a473ccd678a23e1df4cc12019cbbece20051\_90_shift_ops_shr_shl_sshl_sshr for cells of type $shl.
+Using template $paramod\_90_pmux\WIDTH=4\S_WIDTH=3 for cells of type $pmux.
+Using template $paramod\_90_pmux\WIDTH=4\S_WIDTH=2 for cells of type $pmux.
+Using extmapper simplemap for cells of type $pos.
+Using template $paramod\_90_lcu\WIDTH=32 for cells of type $lcu.
+Using template $paramod\_90_lcu\WIDTH=30 for cells of type $lcu.
+No more expansions possible.
+<suppressed ~3020 debug messages>
+
+24.22. Executing OPT pass (performing simple optimizations).
+
+24.22.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module core.
+<suppressed ~906 debug messages>
+
+24.22.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\core'.
+<suppressed ~2130 debug messages>
+Removed a total of 710 cells.
+
+24.22.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+24.22.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \core..
+Removed 190 unused cells and 1090 unused wires.
+<suppressed ~191 debug messages>
+
+24.22.5. Finished fast OPT passes.
+
+24.23. Executing ABC pass (technology mapping using ABC).
+
+24.23.1. Extracting gate netlist of module `\core' to `<abc-temp-dir>/input.blif'..
+Extracted 4534 gates and 5882 wires to a netlist network with 1346 inputs and 279 outputs.
+
+24.23.1.1. Executing ABC.
+Running ABC command: <yosys-exe-dir>/yosys-abc -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: Entered genlib library with 13 gates from file "<abc-temp-dir>/stdcells.genlib".
+ABC: + strash 
+ABC: + dretime 
+ABC: + map 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+24.23.1.2. Re-integrating ABC results.
+ABC RESULTS:               AND cells:       41
+ABC RESULTS:            ANDNOT cells:      709
+ABC RESULTS:               MUX cells:     2545
+ABC RESULTS:              NAND cells:       76
+ABC RESULTS:               NOR cells:      120
+ABC RESULTS:               NOT cells:      124
+ABC RESULTS:                OR cells:      508
+ABC RESULTS:             ORNOT cells:      124
+ABC RESULTS:              XNOR cells:       44
+ABC RESULTS:               XOR cells:      195
+ABC RESULTS:        internal signals:     4257
+ABC RESULTS:           input signals:     1346
+ABC RESULTS:          output signals:      279
+Removing temp directory.
+
+24.24. Executing OPT pass (performing simple optimizations).
+
+24.24.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module core.
+<suppressed ~1090 debug messages>
+
+24.24.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\core'.
+<suppressed ~18 debug messages>
+Removed a total of 6 cells.
+
+24.24.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+24.24.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \core..
+Removed 5 unused cells and 2418 unused wires.
+<suppressed ~41 debug messages>
+
+24.24.5. Finished fast OPT passes.
+
+24.25. Executing HIERARCHY pass (managing design hierarchy).
+
+24.25.1. Analyzing design hierarchy..
+Top module:  \core
+
+24.25.2. Analyzing design hierarchy..
+Top module:  \core
+Removed 0 unused modules.
+
+24.26. Printing statistics.
+
+=== core ===
+
+   Number of wires:               4456
+   Number of wire bits:           7804
+   Number of public wires:         153
+   Number of public wire bits:    3414
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               5856
+     $_ANDNOT_                     708
+     $_AND_                         41
+     $_DFFE_NP_                   1024
+     $_DFF_N_                        3
+     $_DFF_P_                      108
+     $_DLATCH_N_                     3
+     $_MUX_                       2545
+     $_NAND_                        76
+     $_NOR_                        120
+     $_NOT_                        119
+     $_ORNOT_                      122
+     $_OR_                         506
+     $_SDFFE_PP0P_                   2
+     $_SDFF_NP0_                     1
+     $_SDFF_PP0_                   233
+     $_SDFF_PP1_                     7
+     $_XNOR_                        43
+     $_XOR_                        195
+
+24.27. Executing CHECK pass (checking for obvious problems).
+checking module core..
+found and reported 0 problems.
+
+25. Executing SHARE pass (SAT-based resource sharing).
+
+26. Executing OPT pass (performing simple optimizations).
+
+26.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module core.
+
+26.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\core'.
+Removed a total of 0 cells.
+
+26.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \core..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+26.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \core.
+Performed a total of 0 changes.
+
+26.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\core'.
+Removed a total of 0 cells.
+
+26.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+26.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \core..
+
+26.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module core.
+
+26.9. Finished OPT passes. (There is nothing left to do.)
+
+27. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \core..
+Removed 0 unused cells and 92 unused wires.
+<suppressed ~92 debug messages>
+
+28. Printing statistics.
+
+=== core ===
+
+   Number of wires:               4364
+   Number of wire bits:           6045
+   Number of public wires:          61
+   Number of public wire bits:    1655
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               5856
+     $_ANDNOT_                     708
+     $_AND_                         41
+     $_DFFE_NP_                   1024
+     $_DFF_N_                        3
+     $_DFF_P_                      108
+     $_DLATCH_N_                     3
+     $_MUX_                       2545
+     $_NAND_                        76
+     $_NOR_                        120
+     $_NOT_                        119
+     $_ORNOT_                      122
+     $_OR_                         506
+     $_SDFFE_PP0P_                   2
+     $_SDFF_NP0_                     1
+     $_SDFF_PP0_                   233
+     $_SDFF_PP1_                     7
+     $_XNOR_                        43
+     $_XOR_                        195
+
+mapping tbuf
+
+29. Executing TECHMAP pass (map to technology primitives).
+
+29.1. Executing Verilog-2005 frontend: /home/karthik/openlane/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v
+Parsing Verilog input from `/home/karthik/openlane/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v' to AST representation.
+Generating RTLIL representation for module `\$_TBUF_'.
+Successfully finished Verilog frontend.
+
+29.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+30. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+31. Executing MUXCOVER pass (mapping to wider MUXes).
+Covering MUX trees in module core..
+  Treeifying 2545 MUXes:
+    Found tree with 1 MUXes at root \wbmemout [0].
+    Found tree with 1 MUXes at root \wbmemout [1].
+    Found tree with 1 MUXes at root \wbmemout [2].
+    Found tree with 1 MUXes at root \wbmemout [3].
+    Found tree with 1 MUXes at root \wbmemout [4].
+    Found tree with 1 MUXes at root \wbmemout [5].
+    Found tree with 1 MUXes at root \wbmemout [6].
+    Found tree with 1 MUXes at root \wbmemout [7].
+    Found tree with 1 MUXes at root \wbmemout [8].
+    Found tree with 1 MUXes at root \wbmemout [9].
+    Found tree with 1 MUXes at root \wbmemout [10].
+    Found tree with 1 MUXes at root \wbmemout [11].
+    Found tree with 1 MUXes at root \wbmemout [12].
+    Found tree with 1 MUXes at root \wbmemout [13].
+    Found tree with 1 MUXes at root \wbmemout [14].
+    Found tree with 1 MUXes at root \wbmemout [15].
+    Found tree with 1 MUXes at root \wbmemout [16].
+    Found tree with 1 MUXes at root \wbmemout [17].
+    Found tree with 1 MUXes at root \wbmemout [18].
+    Found tree with 1 MUXes at root \wbmemout [19].
+    Found tree with 1 MUXes at root \wbmemout [20].
+    Found tree with 1 MUXes at root \wbmemout [21].
+    Found tree with 1 MUXes at root \wbmemout [22].
+    Found tree with 1 MUXes at root \wbmemout [23].
+    Found tree with 1 MUXes at root \wbmemout [24].
+    Found tree with 1 MUXes at root \wbmemout [25].
+    Found tree with 1 MUXes at root \wbmemout [26].
+    Found tree with 1 MUXes at root \wbmemout [27].
+    Found tree with 1 MUXes at root \wbmemout [28].
+    Found tree with 1 MUXes at root \wbmemout [29].
+    Found tree with 1 MUXes at root \wbmemout [30].
+    Found tree with 1 MUXes at root \wbmemout [31].
+    Found tree with 1 MUXes at root \e1.alu1.out [0].
+    Found tree with 1 MUXes at root \e1.alu1.out [1].
+    Found tree with 1 MUXes at root \e1.alu1.out [2].
+    Found tree with 1 MUXes at root \e1.alu1.out [3].
+    Found tree with 1 MUXes at root \e1.alu1.out [4].
+    Found tree with 1 MUXes at root \e1.alu1.out [5].
+    Found tree with 1 MUXes at root \e1.alu1.out [6].
+    Found tree with 1 MUXes at root \e1.alu1.out [7].
+    Found tree with 1 MUXes at root \e1.alu1.out [8].
+    Found tree with 1 MUXes at root \e1.alu1.out [9].
+    Found tree with 1 MUXes at root \e1.alu1.out [10].
+    Found tree with 1 MUXes at root \e1.alu1.out [11].
+    Found tree with 1 MUXes at root \e1.alu1.out [12].
+    Found tree with 1 MUXes at root \e1.alu1.out [13].
+    Found tree with 1 MUXes at root \e1.alu1.out [14].
+    Found tree with 1 MUXes at root \e1.alu1.out [15].
+    Found tree with 1 MUXes at root \e1.alu1.out [16].
+    Found tree with 1 MUXes at root \e1.alu1.out [17].
+    Found tree with 1 MUXes at root \e1.alu1.out [18].
+    Found tree with 1 MUXes at root \e1.alu1.out [19].
+    Found tree with 1 MUXes at root \e1.alu1.out [20].
+    Found tree with 1 MUXes at root \e1.alu1.out [21].
+    Found tree with 1 MUXes at root \e1.alu1.out [22].
+    Found tree with 1 MUXes at root \e1.alu1.out [23].
+    Found tree with 1 MUXes at root \e1.alu1.out [24].
+    Found tree with 1 MUXes at root \e1.alu1.out [25].
+    Found tree with 1 MUXes at root \e1.alu1.out [26].
+    Found tree with 1 MUXes at root \e1.alu1.out [27].
+    Found tree with 1 MUXes at root \e1.alu1.out [28].
+    Found tree with 1 MUXes at root \e1.alu1.out [29].
+    Found tree with 1 MUXes at root \e1.alu1.out [30].
+    Found tree with 1 MUXes at root \e1.alu1.out [31].
+    Found tree with 1 MUXes at root $auto$alumacc.cc:485:replace_alu$743.B [0].
+    Found tree with 1 MUXes at root $auto$alumacc.cc:485:replace_alu$743.B [1].
+    Found tree with 1 MUXes at root $auto$alumacc.cc:485:replace_alu$743.B [2].
+    Found tree with 1 MUXes at root $auto$alumacc.cc:485:replace_alu$743.B [3].
+    Found tree with 1 MUXes at root $auto$alumacc.cc:485:replace_alu$743.B [4].
+    Found tree with 1 MUXes at root $auto$alumacc.cc:485:replace_alu$743.B [5].
+    Found tree with 1 MUXes at root $auto$alumacc.cc:485:replace_alu$743.B [6].
+    Found tree with 1 MUXes at root $auto$alumacc.cc:485:replace_alu$743.B [7].
+    Found tree with 1 MUXes at root $auto$alumacc.cc:485:replace_alu$743.B [8].
+    Found tree with 1 MUXes at root $auto$alumacc.cc:485:replace_alu$743.B [9].
+    Found tree with 1 MUXes at root $auto$alumacc.cc:485:replace_alu$743.B [10].
+    Found tree with 1 MUXes at root $auto$alumacc.cc:485:replace_alu$743.B [11].
+    Found tree with 1 MUXes at root $auto$alumacc.cc:485:replace_alu$743.B [12].
+    Found tree with 1 MUXes at root $auto$alumacc.cc:485:replace_alu$743.B [13].
+    Found tree with 1 MUXes at root $auto$alumacc.cc:485:replace_alu$743.B [14].
+    Found tree with 1 MUXes at root $auto$alumacc.cc:485:replace_alu$743.B [15].
+    Found tree with 1 MUXes at root $auto$alumacc.cc:485:replace_alu$743.B [16].
+    Found tree with 1 MUXes at root $auto$alumacc.cc:485:replace_alu$743.B [17].
+    Found tree with 1 MUXes at root $auto$alumacc.cc:485:replace_alu$743.B [18].
+    Found tree with 1 MUXes at root $auto$alumacc.cc:485:replace_alu$743.B [19].
+    Found tree with 1 MUXes at root $auto$alumacc.cc:485:replace_alu$743.B [20].
+    Found tree with 1 MUXes at root $auto$alumacc.cc:485:replace_alu$743.B [21].
+    Found tree with 1 MUXes at root $auto$alumacc.cc:485:replace_alu$743.B [22].
+    Found tree with 1 MUXes at root $auto$alumacc.cc:485:replace_alu$743.B [23].
+    Found tree with 1 MUXes at root $auto$alumacc.cc:485:replace_alu$743.B [24].
+    Found tree with 1 MUXes at root $auto$alumacc.cc:485:replace_alu$743.B [25].
+    Found tree with 1 MUXes at root $auto$alumacc.cc:485:replace_alu$743.B [26].
+    Found tree with 1 MUXes at root $auto$alumacc.cc:485:replace_alu$743.B [27].
+    Found tree with 1 MUXes at root $auto$alumacc.cc:485:replace_alu$743.B [28].
+    Found tree with 1 MUXes at root $auto$alumacc.cc:485:replace_alu$743.B [29].
+    Found tree with 1 MUXes at root $abc$11382$new_n6036_.
+    Found tree with 1 MUXes at root $abc$11382$new_n6027_.
+    Found tree with 1 MUXes at root $abc$11382$new_n6020_.
+    Found tree with 1 MUXes at root $abc$11382$new_n6007_.
+    Found tree with 1 MUXes at root $abc$11382$new_n6000_.
+    Found tree with 1 MUXes at root $abc$11382$new_n5990_.
+    Found tree with 1 MUXes at root $abc$11382$new_n5983_.
+    Found tree with 1 MUXes at root $abc$11382$new_n5967_.
+    Found tree with 1 MUXes at root $abc$11382$new_n5960_.
+    Found tree with 1 MUXes at root $abc$11382$new_n5950_.
+    Found tree with 1 MUXes at root $abc$11382$new_n5943_.
+    Found tree with 1 MUXes at root $abc$11382$new_n5930_.
+    Found tree with 1 MUXes at root $abc$11382$new_n5923_.
+    Found tree with 1 MUXes at root $abc$11382$new_n5913_.
+    Found tree with 1 MUXes at root $abc$11382$new_n5906_.
+    Found tree with 1 MUXes at root $abc$11382$new_n5890_.
+    Found tree with 1 MUXes at root $abc$11382$new_n5883_.
+    Found tree with 1 MUXes at root $abc$11382$new_n5873_.
+    Found tree with 1 MUXes at root $abc$11382$new_n5865_.
+    Found tree with 1 MUXes at root $abc$11382$new_n5852_.
+    Found tree with 1 MUXes at root $abc$11382$new_n5845_.
+    Found tree with 1 MUXes at root $abc$11382$new_n5835_.
+    Found tree with 1 MUXes at root $abc$11382$new_n5828_.
+    Found tree with 1 MUXes at root $abc$11382$new_n5815_.
+    Found tree with 1 MUXes at root $abc$11382$new_n5808_.
+    Found tree with 1 MUXes at root $abc$11382$new_n5798_.
+    Found tree with 1 MUXes at root $abc$11382$new_n5791_.
+    Found tree with 1 MUXes at root $abc$11382$new_n5781_.
+    Found tree with 1 MUXes at root $abc$11382$new_n5774_.
+    Found tree with 1 MUXes at root $abc$11382$new_n5767_.
+    Found tree with 1 MUXes at root $abc$11382$new_n5762_.
+    Found tree with 1 MUXes at root $abc$11382$new_n5759_.
+    Found tree with 1 MUXes at root $abc$11382$new_n3300_.
+    Found tree with 1 MUXes at root $abc$11382$new_n3285_.
+    Found tree with 1 MUXes at root $abc$11382$new_n3271_.
+    Found tree with 1 MUXes at root $abc$11382$new_n3257_.
+    Found tree with 1 MUXes at root $abc$11382$new_n3237_.
+    Found tree with 5 MUXes at root $abc$11382$new_n3112_.
+    Found tree with 5 MUXes at root $abc$11382$new_n3082_.
+    Found tree with 4 MUXes at root $abc$11382$new_n3055_.
+    Found tree with 1 MUXes at root $abc$11382$new_n3051_.
+    Found tree with 4 MUXes at root $abc$11382$new_n3021_.
+    Found tree with 1 MUXes at root $abc$11382$new_n3017_.
+    Found tree with 3 MUXes at root $abc$11382$new_n2994_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2991_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2990_.
+    Found tree with 3 MUXes at root $abc$11382$new_n2963_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2960_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2959_.
+    Found tree with 3 MUXes at root $abc$11382$new_n2936_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2933_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2932_.
+    Found tree with 3 MUXes at root $abc$11382$new_n2900_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2897_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2896_.
+    Found tree with 2 MUXes at root $abc$11382$new_n2873_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2871_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2870_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2869_.
+    Found tree with 2 MUXes at root $abc$11382$new_n2842_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2840_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2839_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2838_.
+    Found tree with 2 MUXes at root $abc$11382$new_n2815_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2813_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2812_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2811_.
+    Found tree with 2 MUXes at root $abc$11382$new_n2781_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2779_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2778_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2777_.
+    Found tree with 2 MUXes at root $abc$11382$new_n2754_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2752_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2751_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2750_.
+    Found tree with 2 MUXes at root $abc$11382$new_n2723_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2721_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2720_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2719_.
+    Found tree with 2 MUXes at root $abc$11382$new_n2696_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2694_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2693_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2692_.
+    Found tree with 2 MUXes at root $abc$11382$new_n2659_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2657_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2656_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2655_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2631_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2630_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2629_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2628_.
+    Found tree with 2 MUXes at root $abc$11382$new_n2625_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2598_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2597_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2596_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2595_.
+    Found tree with 2 MUXes at root $abc$11382$new_n2591_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2568_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2567_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2566_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2565_.
+    Found tree with 2 MUXes at root $abc$11382$new_n2561_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2531_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2530_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2529_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2528_.
+    Found tree with 2 MUXes at root $abc$11382$new_n2524_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2501_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2500_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2499_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2498_.
+    Found tree with 2 MUXes at root $abc$11382$new_n2494_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2467_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2466_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2465_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2464_.
+    Found tree with 2 MUXes at root $abc$11382$new_n2460_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2437_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2436_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2435_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2434_.
+    Found tree with 2 MUXes at root $abc$11382$new_n2430_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2400_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2399_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2398_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2397_.
+    Found tree with 2 MUXes at root $abc$11382$new_n2393_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2369_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2368_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2367_.
+    Found tree with 3 MUXes at root $abc$11382$new_n2364_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2363_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2360_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2358_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2331_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2329_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2328_.
+    Found tree with 3 MUXes at root $abc$11382$new_n2325_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2324_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2321_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2319_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2296_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2294_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2293_.
+    Found tree with 3 MUXes at root $abc$11382$new_n2290_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2289_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2286_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2284_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2258_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2256_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2255_.
+    Found tree with 3 MUXes at root $abc$11382$new_n2252_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2251_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2248_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2246_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2222_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2221_.
+    Found tree with 4 MUXes at root $abc$11382$new_n2218_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2217_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2216_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2213_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2212_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2211_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2210_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2208_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2207_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2206_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2204_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2180_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2178_.
+    Found tree with 4 MUXes at root $abc$11382$new_n2175_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2174_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2173_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2170_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2169_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2168_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2167_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2165_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2164_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2163_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2161_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2148_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2137_.
+    Found tree with 5 MUXes at root $abc$11382$new_n2134_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2133_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2132_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2131_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2128_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2127_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2126_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2125_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2124_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2123_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2122_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2121_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2120_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2119_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2118_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2116_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2115_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2114_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2113_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2112_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2111_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2110_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2108_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2107_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2106_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2104_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2087_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2084_.
+    Found tree with 5 MUXes at root $abc$11382$new_n2068_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2067_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2066_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2065_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2064_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2061_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2058_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2057_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2054_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2051_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2050_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2049_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2046_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2043_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2042_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2039_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2035_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2034_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2033_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2030_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2027_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2026_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2023_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2019_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2018_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2015_.
+    Found tree with 1 MUXes at root $abc$11382$new_n2011_.
+    Found tree with 1 MUXes at root $abc$11382$new_n1997_.
+    Found tree with 1 MUXes at root $abc$11382$new_n1993_.
+    Found tree with 1 MUXes at root $abc$11382$new_n1982_.
+    Found tree with 1 MUXes at root $abc$11382$new_n1717_.
+    Found tree with 1 MUXes at root $abc$11382$new_n1709_.
+    Found tree with 1 MUXes at root $abc$11382$new_n1701_.
+    Found tree with 1 MUXes at root $abc$11382$new_n1688_.
+    Found tree with 1 MUXes at root $abc$11382$procmux$384_Y[1].
+    Found tree with 1 MUXes at root $abc$11382$procmux$384_Y[0].
+    Found tree with 33 MUXes at root $abc$11382$procmux$369_Y[31].
+    Found tree with 33 MUXes at root $abc$11382$procmux$369_Y[30].
+    Found tree with 33 MUXes at root $abc$11382$procmux$369_Y[29].
+    Found tree with 33 MUXes at root $abc$11382$procmux$369_Y[28].
+    Found tree with 33 MUXes at root $abc$11382$procmux$369_Y[27].
+    Found tree with 33 MUXes at root $abc$11382$procmux$369_Y[26].
+    Found tree with 33 MUXes at root $abc$11382$procmux$369_Y[25].
+    Found tree with 33 MUXes at root $abc$11382$procmux$369_Y[24].
+    Found tree with 33 MUXes at root $abc$11382$procmux$369_Y[23].
+    Found tree with 33 MUXes at root $abc$11382$procmux$369_Y[22].
+    Found tree with 33 MUXes at root $abc$11382$procmux$369_Y[21].
+    Found tree with 33 MUXes at root $abc$11382$procmux$369_Y[20].
+    Found tree with 33 MUXes at root $abc$11382$procmux$369_Y[19].
+    Found tree with 33 MUXes at root $abc$11382$procmux$369_Y[18].
+    Found tree with 33 MUXes at root $abc$11382$procmux$369_Y[17].
+    Found tree with 33 MUXes at root $abc$11382$procmux$369_Y[16].
+    Found tree with 33 MUXes at root $abc$11382$procmux$369_Y[15].
+    Found tree with 33 MUXes at root $abc$11382$procmux$369_Y[14].
+    Found tree with 33 MUXes at root $abc$11382$procmux$369_Y[13].
+    Found tree with 33 MUXes at root $abc$11382$procmux$369_Y[12].
+    Found tree with 33 MUXes at root $abc$11382$procmux$369_Y[11].
+    Found tree with 33 MUXes at root $abc$11382$procmux$369_Y[10].
+    Found tree with 33 MUXes at root $abc$11382$procmux$369_Y[9].
+    Found tree with 33 MUXes at root $abc$11382$procmux$369_Y[8].
+    Found tree with 33 MUXes at root $abc$11382$procmux$369_Y[7].
+    Found tree with 33 MUXes at root $abc$11382$procmux$369_Y[6].
+    Found tree with 33 MUXes at root $abc$11382$procmux$369_Y[5].
+    Found tree with 33 MUXes at root $abc$11382$procmux$369_Y[4].
+    Found tree with 33 MUXes at root $abc$11382$procmux$369_Y[3].
+    Found tree with 33 MUXes at root $abc$11382$procmux$369_Y[2].
+    Found tree with 33 MUXes at root $abc$11382$procmux$369_Y[1].
+    Found tree with 33 MUXes at root $abc$11382$procmux$369_Y[0].
+    Found tree with 34 MUXes at root $abc$11382$procmux$360_Y[31].
+    Found tree with 34 MUXes at root $abc$11382$procmux$360_Y[30].
+    Found tree with 34 MUXes at root $abc$11382$procmux$360_Y[29].
+    Found tree with 34 MUXes at root $abc$11382$procmux$360_Y[28].
+    Found tree with 34 MUXes at root $abc$11382$procmux$360_Y[27].
+    Found tree with 34 MUXes at root $abc$11382$procmux$360_Y[26].
+    Found tree with 34 MUXes at root $abc$11382$procmux$360_Y[25].
+    Found tree with 34 MUXes at root $abc$11382$procmux$360_Y[24].
+    Found tree with 34 MUXes at root $abc$11382$procmux$360_Y[23].
+    Found tree with 34 MUXes at root $abc$11382$procmux$360_Y[22].
+    Found tree with 34 MUXes at root $abc$11382$procmux$360_Y[21].
+    Found tree with 34 MUXes at root $abc$11382$procmux$360_Y[20].
+    Found tree with 34 MUXes at root $abc$11382$procmux$360_Y[19].
+    Found tree with 34 MUXes at root $abc$11382$procmux$360_Y[18].
+    Found tree with 34 MUXes at root $abc$11382$procmux$360_Y[17].
+    Found tree with 34 MUXes at root $abc$11382$procmux$360_Y[16].
+    Found tree with 34 MUXes at root $abc$11382$procmux$360_Y[15].
+    Found tree with 34 MUXes at root $abc$11382$procmux$360_Y[14].
+    Found tree with 34 MUXes at root $abc$11382$procmux$360_Y[13].
+    Found tree with 34 MUXes at root $abc$11382$procmux$360_Y[12].
+    Found tree with 34 MUXes at root $abc$11382$procmux$360_Y[11].
+    Found tree with 34 MUXes at root $abc$11382$procmux$360_Y[10].
+    Found tree with 34 MUXes at root $abc$11382$procmux$360_Y[9].
+    Found tree with 34 MUXes at root $abc$11382$procmux$360_Y[8].
+    Found tree with 34 MUXes at root $abc$11382$procmux$360_Y[7].
+    Found tree with 34 MUXes at root $abc$11382$procmux$360_Y[6].
+    Found tree with 34 MUXes at root $abc$11382$procmux$360_Y[5].
+    Found tree with 34 MUXes at root $abc$11382$procmux$360_Y[4].
+    Found tree with 34 MUXes at root $abc$11382$procmux$360_Y[3].
+    Found tree with 34 MUXes at root $abc$11382$procmux$360_Y[2].
+    Found tree with 34 MUXes at root $abc$11382$procmux$360_Y[1].
+    Found tree with 34 MUXes at root $abc$11382$procmux$360_Y[0].
+    Finished treeification: Found 405 trees.
+  Covering trees:
+    Replaced tree at \wbmemout [0]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \wbmemout [1]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \wbmemout [2]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \wbmemout [3]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \wbmemout [4]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \wbmemout [5]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \wbmemout [6]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \wbmemout [7]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \wbmemout [8]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \wbmemout [9]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \wbmemout [10]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \wbmemout [11]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \wbmemout [12]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \wbmemout [13]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \wbmemout [14]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \wbmemout [15]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \wbmemout [16]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \wbmemout [17]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \wbmemout [18]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \wbmemout [19]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \wbmemout [20]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \wbmemout [21]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \wbmemout [22]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \wbmemout [23]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \wbmemout [24]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \wbmemout [25]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \wbmemout [26]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \wbmemout [27]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \wbmemout [28]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \wbmemout [29]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \wbmemout [30]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \wbmemout [31]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \e1.alu1.out [0]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \e1.alu1.out [1]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \e1.alu1.out [2]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \e1.alu1.out [3]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \e1.alu1.out [4]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \e1.alu1.out [5]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \e1.alu1.out [6]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \e1.alu1.out [7]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \e1.alu1.out [8]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \e1.alu1.out [9]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \e1.alu1.out [10]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \e1.alu1.out [11]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \e1.alu1.out [12]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \e1.alu1.out [13]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \e1.alu1.out [14]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \e1.alu1.out [15]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \e1.alu1.out [16]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \e1.alu1.out [17]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \e1.alu1.out [18]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \e1.alu1.out [19]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \e1.alu1.out [20]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \e1.alu1.out [21]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \e1.alu1.out [22]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \e1.alu1.out [23]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \e1.alu1.out [24]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \e1.alu1.out [25]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \e1.alu1.out [26]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \e1.alu1.out [27]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \e1.alu1.out [28]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \e1.alu1.out [29]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \e1.alu1.out [30]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \e1.alu1.out [31]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$alumacc.cc:485:replace_alu$743.B [0]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$alumacc.cc:485:replace_alu$743.B [1]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$alumacc.cc:485:replace_alu$743.B [2]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$alumacc.cc:485:replace_alu$743.B [3]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$alumacc.cc:485:replace_alu$743.B [4]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$alumacc.cc:485:replace_alu$743.B [5]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$alumacc.cc:485:replace_alu$743.B [6]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$alumacc.cc:485:replace_alu$743.B [7]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$alumacc.cc:485:replace_alu$743.B [8]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$alumacc.cc:485:replace_alu$743.B [9]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$alumacc.cc:485:replace_alu$743.B [10]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$alumacc.cc:485:replace_alu$743.B [11]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$alumacc.cc:485:replace_alu$743.B [12]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$alumacc.cc:485:replace_alu$743.B [13]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$alumacc.cc:485:replace_alu$743.B [14]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$alumacc.cc:485:replace_alu$743.B [15]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$alumacc.cc:485:replace_alu$743.B [16]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$alumacc.cc:485:replace_alu$743.B [17]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$alumacc.cc:485:replace_alu$743.B [18]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$alumacc.cc:485:replace_alu$743.B [19]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$alumacc.cc:485:replace_alu$743.B [20]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$alumacc.cc:485:replace_alu$743.B [21]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$alumacc.cc:485:replace_alu$743.B [22]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$alumacc.cc:485:replace_alu$743.B [23]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$alumacc.cc:485:replace_alu$743.B [24]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$alumacc.cc:485:replace_alu$743.B [25]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$alumacc.cc:485:replace_alu$743.B [26]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$alumacc.cc:485:replace_alu$743.B [27]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$alumacc.cc:485:replace_alu$743.B [28]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$alumacc.cc:485:replace_alu$743.B [29]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n6036_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n6027_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n6020_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n6007_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n6000_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n5990_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n5983_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n5967_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n5960_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n5950_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n5943_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n5930_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n5923_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n5913_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n5906_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n5890_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n5883_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n5873_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n5865_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n5852_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n5845_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n5835_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n5828_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n5815_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n5808_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n5798_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n5791_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n5781_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n5774_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n5767_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n5762_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n5759_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n3300_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n3285_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n3271_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n3257_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n3237_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n3112_: 5 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n3082_: 5 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n3055_: 4 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n3051_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n3021_: 4 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n3017_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2994_: 3 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2991_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2990_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2963_: 3 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2960_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2959_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2936_: 3 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2933_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2932_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2900_: 3 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2897_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2896_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2873_: 2 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2871_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2870_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2869_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2842_: 2 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2840_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2839_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2838_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2815_: 2 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2813_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2812_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2811_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2781_: 2 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2779_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2778_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2777_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2754_: 2 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2752_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2751_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2750_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2723_: 2 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2721_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2720_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2719_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2696_: 2 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2694_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2693_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2692_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2659_: 2 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2657_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2656_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2655_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2631_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2630_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2629_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2628_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2625_: 2 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2598_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2597_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2596_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2595_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2591_: 2 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2568_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2567_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2566_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2565_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2561_: 2 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2531_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2530_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2529_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2528_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2524_: 2 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2501_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2500_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2499_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2498_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2494_: 2 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2467_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2466_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2465_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2464_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2460_: 2 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2437_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2436_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2435_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2434_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2430_: 2 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2400_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2399_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2398_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2397_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2393_: 2 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2369_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2368_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2367_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2364_: 3 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2363_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2360_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2358_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2331_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2329_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2328_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2325_: 3 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2324_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2321_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2319_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2296_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2294_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2293_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2290_: 3 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2289_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2286_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2284_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2258_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2256_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2255_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2252_: 3 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2251_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2248_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2246_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2222_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2221_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2218_: 4 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2217_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2216_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2213_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2212_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2211_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2210_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2208_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2207_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2206_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2204_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2180_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2178_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2175_: 4 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2174_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2173_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2170_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2169_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2168_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2167_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2165_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2164_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2163_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2161_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2148_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2137_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2134_: 5 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2133_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2132_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2131_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2128_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2127_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2126_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2125_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2124_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2123_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2122_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2121_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2120_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2119_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2118_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2116_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2115_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2114_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2113_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2112_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2111_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2110_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2108_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2107_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2106_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2104_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2087_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2084_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2068_: 5 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2067_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2066_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2065_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2064_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2061_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2058_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2057_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2054_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2051_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2050_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2049_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2046_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2043_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2042_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2039_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2035_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2034_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2033_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2030_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2027_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2026_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2023_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2019_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2018_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2015_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n2011_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n1997_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n1993_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n1982_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n1717_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n1709_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n1701_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$new_n1688_: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$384_Y[1]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$384_Y[0]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$369_Y[31]: 3 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$369_Y[30]: 3 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$369_Y[29]: 3 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$369_Y[28]: 3 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$369_Y[27]: 3 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$369_Y[26]: 3 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$369_Y[25]: 3 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$369_Y[24]: 3 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$369_Y[23]: 3 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$369_Y[22]: 3 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$369_Y[21]: 3 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$369_Y[20]: 3 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$369_Y[19]: 3 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$369_Y[18]: 3 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$369_Y[17]: 3 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$369_Y[16]: 3 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$369_Y[15]: 3 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$369_Y[14]: 3 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$369_Y[13]: 3 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$369_Y[12]: 3 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$369_Y[11]: 3 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$369_Y[10]: 3 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$369_Y[9]: 3 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$369_Y[8]: 3 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$369_Y[7]: 3 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$369_Y[6]: 3 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$369_Y[5]: 3 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$369_Y[4]: 3 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$369_Y[3]: 3 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$369_Y[2]: 3 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$369_Y[1]: 3 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$369_Y[0]: 3 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$360_Y[31]: 4 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$360_Y[30]: 4 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$360_Y[29]: 4 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$360_Y[28]: 4 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$360_Y[27]: 4 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$360_Y[26]: 4 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$360_Y[25]: 4 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$360_Y[24]: 4 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$360_Y[23]: 4 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$360_Y[22]: 4 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$360_Y[21]: 4 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$360_Y[20]: 4 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$360_Y[19]: 4 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$360_Y[18]: 4 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$360_Y[17]: 4 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$360_Y[16]: 4 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$360_Y[15]: 4 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$360_Y[14]: 4 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$360_Y[13]: 4 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$360_Y[12]: 4 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$360_Y[11]: 4 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$360_Y[10]: 4 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$360_Y[9]: 4 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$360_Y[8]: 4 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$360_Y[7]: 4 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$360_Y[6]: 4 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$360_Y[5]: 4 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$360_Y[4]: 4 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$360_Y[3]: 4 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$360_Y[2]: 4 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$360_Y[1]: 4 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $abc$11382$procmux$360_Y[0]: 4 MUX2, 10 MUX4, 0 MUX8, 0 MUX16
+  Added a total of 0 decoder MUXes.
+<suppressed ~45406 debug messages>
+
+32. Executing TECHMAP pass (map to technology primitives).
+
+32.1. Executing Verilog-2005 frontend: /home/karthik/openlane/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/mux4_map.v
+Parsing Verilog input from `/home/karthik/openlane/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/mux4_map.v' to AST representation.
+Generating RTLIL representation for module `\$_MUX4_'.
+Successfully finished Verilog frontend.
+
+32.2. Continuing TECHMAP pass.
+Using template \$_MUX4_ for cells of type $_MUX4_.
+No more expansions possible.
+<suppressed ~643 debug messages>
+
+33. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+34. Executing TECHMAP pass (map to technology primitives).
+
+34.1. Executing Verilog-2005 frontend: /home/karthik/openlane/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/mux2_map.v
+Parsing Verilog input from `/home/karthik/openlane/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/mux2_map.v' to AST representation.
+Generating RTLIL representation for module `\$_MUX_'.
+Successfully finished Verilog frontend.
+
+34.2. Continuing TECHMAP pass.
+Using template \$_MUX_ for cells of type $_MUX_.
+No more expansions possible.
+<suppressed ~628 debug messages>
+
+35. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+36. Executing TECHMAP pass (map to technology primitives).
+
+36.1. Executing Verilog-2005 frontend: /home/karthik/openlane/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v
+Parsing Verilog input from `/home/karthik/openlane/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v' to AST representation.
+Generating RTLIL representation for module `\$_DLATCH_P_'.
+Generating RTLIL representation for module `\$_DLATCH_N_'.
+Successfully finished Verilog frontend.
+
+36.2. Continuing TECHMAP pass.
+Using template \$_DLATCH_N_ for cells of type $_DLATCH_N_.
+No more expansions possible.
+<suppressed ~7 debug messages>
+
+37. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+38. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+  cell sky130_fd_sc_hd__dfxtp_2 (noninv, pins=3, area=21.27) is a direct match for cell type $_DFF_P_.
+  cell sky130_fd_sc_hd__dfrtp_2 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN0_.
+  cell sky130_fd_sc_hd__dfstp_2 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN1_.
+  cell sky130_fd_sc_hd__dfbbn_2 (noninv, pins=6, area=35.03) is a direct match for cell type $_DFFSR_NNN_.
+  final dff cell mappings:
+    unmapped dff cell: $_DFF_N_
+    \sky130_fd_sc_hd__dfxtp_2 _DFF_P_ (.CLK( C), .D( D), .Q( Q));
+    unmapped dff cell: $_DFF_NN0_
+    unmapped dff cell: $_DFF_NN1_
+    unmapped dff cell: $_DFF_NP0_
+    unmapped dff cell: $_DFF_NP1_
+    \sky130_fd_sc_hd__dfrtp_2 _DFF_PN0_ (.CLK( C), .D( D), .Q( Q), .RESET_B( R));
+    \sky130_fd_sc_hd__dfstp_2 _DFF_PN1_ (.CLK( C), .D( D), .Q( Q), .SET_B( R));
+    unmapped dff cell: $_DFF_PP0_
+    unmapped dff cell: $_DFF_PP1_
+    \sky130_fd_sc_hd__dfbbn_2 _DFFSR_NNN_ (.CLK_N( C), .D( D), .Q( Q), .Q_N(~Q), .RESET_B( R), .SET_B( S));
+    unmapped dff cell: $_DFFSR_NNP_
+    unmapped dff cell: $_DFFSR_NPN_
+    unmapped dff cell: $_DFFSR_NPP_
+    unmapped dff cell: $_DFFSR_PNN_
+    unmapped dff cell: $_DFFSR_PNP_
+    unmapped dff cell: $_DFFSR_PPN_
+    unmapped dff cell: $_DFFSR_PPP_
+
+38.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+Mapping DFF cells in module `\core':
+  mapped 1378 $_DFF_P_ cells to \sky130_fd_sc_hd__dfxtp_2 cells.
+
+39. Printing statistics.
+
+=== core ===
+
+   Number of wires:              13659
+   Number of wire bits:          15340
+   Number of public wires:          61
+   Number of public wire bits:    1655
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               6873
+     $_ANDNOT_                     708
+     $_AND_                         41
+     $_MUX_                       1269
+     $_NAND_                        76
+     $_NOR_                        120
+     $_NOT_                       1147
+     $_ORNOT_                      122
+     $_OR_                         506
+     $_XNOR_                        43
+     $_XOR_                        195
+     sky130_fd_sc_hd__dfxtp_2     1378
+     sky130_fd_sc_hd__dlxtn_1        3
+     sky130_fd_sc_hd__mux2_4       625
+     sky130_fd_sc_hd__mux4_4       640
+
+[INFO]: ABC: WireLoad : S_4
+
+40. Executing ABC pass (technology mapping using ABC).
+
+40.1. Extracting gate netlist of module `\core' to `/tmp/yosys-abc-tUmeoz/input.blif'..
+Extracted 4227 gates and 5721 wires to a netlist network with 1492 inputs and 2481 outputs.
+
+40.1.1. Executing ABC.
+Running ABC command: /build/bin/yosys-abc -s -f /tmp/yosys-abc-tUmeoz/abc.script 2>&1
+ABC: ABC command line: "source /tmp/yosys-abc-tUmeoz/abc.script".
+ABC: 
+ABC: + read_blif /tmp/yosys-abc-tUmeoz/input.blif 
+ABC: + read_lib -w /openLANE_flow/designs/core/runs/core/tmp/trimmed.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.08 sec
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfbbn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfsbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtp_1".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_2".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_4".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_8".
+ABC: Library "sky130_fd_sc_hd__tt_025C_1v80" from "/openLANE_flow/designs/core/runs/core/tmp/trimmed.lib" has 175 cells (17 skipped: 14 seq; 3 tri-state; 0 no func; 0 dont_use).  Time =     0.12 sec
+ABC: Memory =    7.80 MB. Time =     0.12 sec
+ABC: Warning: Detected 3 multi-output gates (for example, "sky130_fd_sc_hd__fa_1").
+ABC: + read_constr -v /openLANE_flow/designs/core/runs/core/tmp/synthesis/yosys.sdc 
+ABC: Setting driving cell to be "sky130_fd_sc_hd__inv_8".
+ABC: Setting output load to be 17.650000.
+ABC: + read_constr /openLANE_flow/designs/core/runs/core/tmp/synthesis/yosys.sdc 
+ABC: + fx 
+ABC: + mfs 
+ABC: + strash 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + retime -D -D 30000 -M 5 
+ABC: + scleanup 
+ABC: Error: The network is combinational.
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + refactor 
+ABC: + balance 
+ABC: + rewrite 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + refactor -z 
+ABC: + rewrite -z 
+ABC: + balance 
+ABC: + fraig_store 
+ABC: + fraig_restore 
+ABC: + amap -m -Q 0.1 -F 20 -A 20 -C 5000 
+ABC: + retime -D -D 30000 
+ABC: + buffer -N 3 -S 3000.0 
+ABC: Node 4498 has dup fanin 1422.
+ABC: Node 4498 has dup fanin 4138.
+ABC: Node 4498 has dup fanin 1422.
+ABC: Node 4498 has dup fanin 4138.
+ABC: Node 4508 has dup fanin 1431.
+ABC: Node 4508 has dup fanin 4144.
+ABC: Node 4508 has dup fanin 1431.
+ABC: Node 4508 has dup fanin 4144.
+ABC: Node 4514 has dup fanin 4151.
+ABC: Node 4514 has dup fanin 1441.
+ABC: Node 4514 has dup fanin 4151.
+ABC: Node 4514 has dup fanin 1441.
+ABC: Node 4521 has dup fanin 1449.
+ABC: Node 4521 has dup fanin 4157.
+ABC: Node 4521 has dup fanin 1449.
+ABC: Node 4521 has dup fanin 4157.
+ABC: Node 4533 has dup fanin 4160.
+ABC: Node 4533 has dup fanin 1455.
+ABC: Node 4533 has dup fanin 4160.
+ABC: Node 4533 has dup fanin 1455.
+ABC: Node 4538 has dup fanin 4160.
+ABC: Node 4538 has dup fanin 1459.
+ABC: Node 4538 has dup fanin 4160.
+ABC: Node 4538 has dup fanin 1459.
+ABC: Node 4539 has dup fanin 4160.
+ABC: Node 4539 has dup fanin 1461.
+ABC: Node 4539 has dup fanin 4160.
+ABC: Node 4539 has dup fanin 1461.
+ABC: Node 4542 has dup fanin 4160.
+ABC: Node 4542 has dup fanin 4160.
+ABC: Node 4545 has dup fanin 4160.
+ABC: Node 4545 has dup fanin 1463.
+ABC: Node 4545 has dup fanin 4160.
+ABC: Node 4545 has dup fanin 1463.
+ABC: Node 4551 has dup fanin 4160.
+ABC: Node 4551 has dup fanin 1467.
+ABC: Node 4551 has dup fanin 4160.
+ABC: Node 4551 has dup fanin 1467.
+ABC: Node 4553 has dup fanin 4160.
+ABC: Node 4553 has dup fanin 1469.
+ABC: Node 4553 has dup fanin 4160.
+ABC: Node 4553 has dup fanin 1469.
+ABC: Node 4560 has dup fanin 4160.
+ABC: Node 4560 has dup fanin 1473.
+ABC: Node 4560 has dup fanin 4160.
+ABC: Node 4560 has dup fanin 1473.
+ABC: Node 4563 has dup fanin 4160.
+ABC: Node 4563 has dup fanin 1475.
+ABC: Node 4563 has dup fanin 4160.
+ABC: Node 4563 has dup fanin 1475.
+ABC: Node 4564 has dup fanin 4160.
+ABC: Node 4564 has dup fanin 1477.
+ABC: Node 4564 has dup fanin 4160.
+ABC: Node 4564 has dup fanin 1477.
+ABC: Node 4567 has dup fanin 4160.
+ABC: Node 4567 has dup fanin 4160.
+ABC: Node 4569 has dup fanin 4160.
+ABC: Node 4569 has dup fanin 4160.
+ABC: Node 4572 has dup fanin 4160.
+ABC: Node 4572 has dup fanin 1479.
+ABC: Node 4572 has dup fanin 4160.
+ABC: Node 4572 has dup fanin 1479.
+ABC: Node 4573 has dup fanin 4160.
+ABC: Node 4573 has dup fanin 1481.
+ABC: Node 4573 has dup fanin 4160.
+ABC: Node 4573 has dup fanin 1481.
+ABC: Node 4576 has dup fanin 4160.
+ABC: Node 4576 has dup fanin 1483.
+ABC: Node 4576 has dup fanin 4160.
+ABC: Node 4576 has dup fanin 1483.
+ABC: Node 4578 has dup fanin 4160.
+ABC: Node 4578 has dup fanin 1485.
+ABC: Node 4578 has dup fanin 4160.
+ABC: Node 4578 has dup fanin 1485.
+ABC: Node 4580 has dup fanin 4160.
+ABC: Node 4580 has dup fanin 4160.
+ABC: Node 4581 has dup fanin 4160.
+ABC: Node 4581 has dup fanin 4160.
+ABC: Node 4584 has dup fanin 4160.
+ABC: Node 4584 has dup fanin 1487.
+ABC: Node 4584 has dup fanin 4160.
+ABC: Node 4584 has dup fanin 1487.
+ABC: Node 4586 has dup fanin 4160.
+ABC: Node 4586 has dup fanin 1489.
+ABC: Node 4586 has dup fanin 4160.
+ABC: Node 4586 has dup fanin 1489.
+ABC: Node 4588 has dup fanin 4160.
+ABC: Node 4588 has dup fanin 4160.
+ABC: Node 4593 has dup fanin 1453.
+ABC: Node 4593 has dup fanin 1492.
+ABC: Node 4593 has dup fanin 1453.
+ABC: Node 4593 has dup fanin 1492.
+ABC: Node 5793 has dup fanin 4114.
+ABC: Node 5793 has dup fanin 5792.
+ABC: Node 5793 has dup fanin 4114.
+ABC: Node 5793 has dup fanin 5792.
+ABC: Node 5974 has dup fanin 5972.
+ABC: Node 5974 has dup fanin 5973.
+ABC: Node 5974 has dup fanin 5972.
+ABC: Node 5974 has dup fanin 5973.
+ABC: Node 6035 has dup fanin 6033.
+ABC: Node 6035 has dup fanin 6034.
+ABC: Node 6035 has dup fanin 6033.
+ABC: Node 6035 has dup fanin 6034.
+ABC: Node 6062 has dup fanin 5791.
+ABC: Node 6062 has dup fanin 6061.
+ABC: Node 6062 has dup fanin 5791.
+ABC: Node 6062 has dup fanin 6061.
+ABC: Node 6117 has dup fanin 5884.
+ABC: Node 6117 has dup fanin 6116.
+ABC: Node 6117 has dup fanin 5884.
+ABC: Node 6117 has dup fanin 6116.
+ABC: Node 6150 has dup fanin 5900.
+ABC: Node 6150 has dup fanin 6149.
+ABC: Node 6150 has dup fanin 5900.
+ABC: Node 6150 has dup fanin 6149.
+ABC: Node 6167 has dup fanin 5831.
+ABC: Node 6167 has dup fanin 6166.
+ABC: Node 6167 has dup fanin 5831.
+ABC: Node 6167 has dup fanin 6166.
+ABC: Node 6181 has dup fanin 5839.
+ABC: Node 6181 has dup fanin 6180.
+ABC: Node 6181 has dup fanin 5839.
+ABC: Node 6181 has dup fanin 6180.
+ABC: Node 6197 has dup fanin 5846.
+ABC: Node 6197 has dup fanin 6196.
+ABC: Node 6197 has dup fanin 5846.
+ABC: Node 6197 has dup fanin 6196.
+ABC: Node 6211 has dup fanin 5855.
+ABC: Node 6211 has dup fanin 6210.
+ABC: Node 6211 has dup fanin 5855.
+ABC: Node 6211 has dup fanin 6210.
+ABC: Node 6227 has dup fanin 5810.
+ABC: Node 6227 has dup fanin 6226.
+ABC: Node 6227 has dup fanin 5810.
+ABC: Node 6227 has dup fanin 6226.
+ABC: Node 6246 has dup fanin 5818.
+ABC: Node 6246 has dup fanin 6245.
+ABC: Node 6246 has dup fanin 5818.
+ABC: Node 6246 has dup fanin 6245.
+ABC: Node 6260 has dup fanin 5800.
+ABC: Node 6260 has dup fanin 6259.
+ABC: Node 6260 has dup fanin 5800.
+ABC: Node 6260 has dup fanin 6259.
+ABC: + upsize -D 30000 
+ABC: Current delay (8452.55 ps) does not exceed the target delay (30000.00 ps). Upsizing is not performed.
+ABC: + dnsize -D 30000 
+ABC: + stime -p 
+ABC: WireLoad = "none"  Gates =   5922 ( 65.8 %)   Cap =  9.6 ff ( 15.7 %)   Area =    33672.29 ( 34.2 %)   Delay =  8389.01 ps  (  0.6 %)               
+ABC: Path  0 --      35 : 0    2 pi                       A =   0.00  Df =   9.1   -6.2 ps  S =  21.3 ps  Cin =  0.0 ff  Cout =   7.1 ff  Cmax =   0.0 ff  G =    0  
+ABC: Path  1 --    4019 : 1    2 sky130_fd_sc_hd__inv_2   A =   3.75  Df =  30.7   -0.7 ps  S =  24.5 ps  Cin =  4.5 ff  Cout =   3.7 ff  Cmax = 331.4 ff  G =   79  
+ABC: Path  2 --    4023 : 4    2 sky130_fd_sc_hd__or4_2   A =   8.76  Df = 697.1 -540.0 ps  S = 113.3 ps  Cin =  1.5 ff  Cout =   6.1 ff  Cmax = 310.4 ff  G =  391  
+ABC: Path  3 --    4024 : 2    3 sky130_fd_sc_hd__or2_2   A =   6.26  Df =1014.1 -740.7 ps  S =  70.9 ps  Cin =  1.5 ff  Cout =   8.6 ff  Cmax = 299.4 ff  G =  567  
+ABC: Path  4 --    4025 : 2    3 sky130_fd_sc_hd__or2_2   A =   6.26  Df =1314.5 -920.7 ps  S =  70.6 ps  Cin =  1.5 ff  Cout =   8.5 ff  Cmax = 299.4 ff  G =  563  
+ABC: Path  5 --    4026 : 2    2 sky130_fd_sc_hd__or2_2   A =   6.26  Df =1605.2-1100.0 ps  S =  64.5 ps  Cin =  1.5 ff  Cout =   6.1 ff  Cmax = 299.4 ff  G =  404  
+ABC: Path  6 --    4027 : 2    3 sky130_fd_sc_hd__or2_2   A =   6.26  Df =1903.2-1281.9 ps  S =  70.6 ps  Cin =  1.5 ff  Cout =   8.5 ff  Cmax = 299.4 ff  G =  563  
+ABC: Path  7 --    4028 : 2    2 sky130_fd_sc_hd__or2_2   A =   6.26  Df =2193.8-1461.3 ps  S =  64.5 ps  Cin =  1.5 ff  Cout =   6.1 ff  Cmax = 299.4 ff  G =  404  
+ABC: Path  8 --    4029 : 2    3 sky130_fd_sc_hd__or2_2   A =   6.26  Df =2491.8-1643.2 ps  S =  70.6 ps  Cin =  1.5 ff  Cout =   8.5 ff  Cmax = 299.4 ff  G =  563  
+ABC: Path  9 --    4030 : 2    2 sky130_fd_sc_hd__or2_2   A =   6.26  Df =2782.5-1822.5 ps  S =  64.5 ps  Cin =  1.5 ff  Cout =   6.1 ff  Cmax = 299.4 ff  G =  404  
+ABC: Path 10 --    4031 : 2    3 sky130_fd_sc_hd__or2_2   A =   6.26  Df =3080.5-2004.5 ps  S =  70.6 ps  Cin =  1.5 ff  Cout =   8.5 ff  Cmax = 299.4 ff  G =  563  
+ABC: Path 11 --    4032 : 2    2 sky130_fd_sc_hd__or2_2   A =   6.26  Df =3371.2-2183.8 ps  S =  64.5 ps  Cin =  1.5 ff  Cout =   6.1 ff  Cmax = 299.4 ff  G =  404  
+ABC: Path 12 --    4033 : 2    3 sky130_fd_sc_hd__or2_2   A =   6.26  Df =3669.2-2365.7 ps  S =  70.6 ps  Cin =  1.5 ff  Cout =   8.5 ff  Cmax = 299.4 ff  G =  563  
+ABC: Path 13 --    4034 : 2    2 sky130_fd_sc_hd__or2_2   A =   6.26  Df =3959.9-2545.0 ps  S =  64.5 ps  Cin =  1.5 ff  Cout =   6.1 ff  Cmax = 299.4 ff  G =  404  
+ABC: Path 14 --    4035 : 2    3 sky130_fd_sc_hd__or2_2   A =   6.26  Df =4257.9-2727.0 ps  S =  70.6 ps  Cin =  1.5 ff  Cout =   8.5 ff  Cmax = 299.4 ff  G =  563  
+ABC: Path 15 --    4036 : 2    2 sky130_fd_sc_hd__or2_2   A =   6.26  Df =4548.5-2906.3 ps  S =  64.5 ps  Cin =  1.5 ff  Cout =   6.1 ff  Cmax = 299.4 ff  G =  404  
+ABC: Path 16 --    4037 : 2    3 sky130_fd_sc_hd__or2_2   A =   6.26  Df =4846.5-3088.2 ps  S =  70.6 ps  Cin =  1.5 ff  Cout =   8.5 ff  Cmax = 299.4 ff  G =  563  
+ABC: Path 17 --    4038 : 2    2 sky130_fd_sc_hd__or2_2   A =   6.26  Df =5137.2-3267.5 ps  S =  64.5 ps  Cin =  1.5 ff  Cout =   6.1 ff  Cmax = 299.4 ff  G =  404  
+ABC: Path 18 --    4039 : 2    3 sky130_fd_sc_hd__or2_2   A =   6.26  Df =5435.2-3449.5 ps  S =  70.6 ps  Cin =  1.5 ff  Cout =   8.5 ff  Cmax = 299.4 ff  G =  563  
+ABC: Path 19 --    4040 : 2    2 sky130_fd_sc_hd__or2_2   A =   6.26  Df =5725.9-3628.8 ps  S =  64.5 ps  Cin =  1.5 ff  Cout =   6.1 ff  Cmax = 299.4 ff  G =  404  
+ABC: Path 20 --    4041 : 2    3 sky130_fd_sc_hd__or2_2   A =   6.26  Df =6023.9-3810.7 ps  S =  70.6 ps  Cin =  1.5 ff  Cout =   8.5 ff  Cmax = 299.4 ff  G =  563  
+ABC: Path 21 --    4042 : 2    2 sky130_fd_sc_hd__or2_2   A =   6.26  Df =6314.5-3990.1 ps  S =  64.5 ps  Cin =  1.5 ff  Cout =   6.1 ff  Cmax = 299.4 ff  G =  404  
+ABC: Path 22 --    4043 : 2    3 sky130_fd_sc_hd__or2_2   A =   6.26  Df =6612.5-4172.0 ps  S =  70.6 ps  Cin =  1.5 ff  Cout =   8.5 ff  Cmax = 299.4 ff  G =  563  
+ABC: Path 23 --    4044 : 2    2 sky130_fd_sc_hd__or2_2   A =   6.26  Df =6903.2-4351.3 ps  S =  64.5 ps  Cin =  1.5 ff  Cout =   6.1 ff  Cmax = 299.4 ff  G =  404  
+ABC: Path 24 --    4045 : 2    3 sky130_fd_sc_hd__or2_2   A =   6.26  Df =7201.2-4533.3 ps  S =  70.6 ps  Cin =  1.5 ff  Cout =   8.5 ff  Cmax = 299.4 ff  G =  563  
+ABC: Path 25 --    4046 : 2    2 sky130_fd_sc_hd__or2_2   A =   6.26  Df =7491.9-4712.6 ps  S =  64.5 ps  Cin =  1.5 ff  Cout =   6.1 ff  Cmax = 299.4 ff  G =  404  
+ABC: Path 26 --    4047 : 2    3 sky130_fd_sc_hd__or2_2   A =   6.26  Df =7789.9-4894.5 ps  S =  70.6 ps  Cin =  1.5 ff  Cout =   8.5 ff  Cmax = 299.4 ff  G =  563  
+ABC: Path 27 --    4048 : 2    2 sky130_fd_sc_hd__or2_2   A =   6.26  Df =8084.4-5074.0 ps  S =  67.1 ps  Cin =  1.5 ff  Cout =   7.1 ff  Cmax = 299.4 ff  G =  468  
+ABC: Path 28 --    4049 : 1    2 sky130_fd_sc_hd__inv_2   A =   3.75  Df =8148.2-5102.8 ps  S =  44.3 ps  Cin =  4.5 ff  Cout =   7.2 ff  Cmax = 331.4 ff  G =  150  
+ABC: Path 29 --    4054 : 5    1 sky130_fd_sc_hd__o221a_2 A =  11.26  Df =8389.0  -21.9 ps  S = 117.4 ps  Cin =  2.3 ff  Cout =  17.6 ff  Cmax = 281.1 ff  G =  751  
+ABC: Start-point = pi34 ($auto$alumacc.cc:485:replace_alu$743.B [1]).  End-point = po2 ($auto$rtlil.cc:2290:MuxGate$21727).
+ABC: + print_stats -m 
+ABC: netlist                       : i/o = 1492/ 2481  lat =    0  nd =  5922  edge =  11141  area =33660.28  delay =29.00  lev = 29
+ABC: + write_blif /tmp/yosys-abc-tUmeoz/output.blif 
+
+40.1.2. Re-integrating ABC results.
+ABC RESULTS:   sky130_fd_sc_hd__a211o_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__a211oi_2 cells:       13
+ABC RESULTS:   sky130_fd_sc_hd__a21bo_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__a21boi_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a21o_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__a21oi_2 cells:       26
+ABC RESULTS:   sky130_fd_sc_hd__a221o_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__a22o_2 cells:     1027
+ABC RESULTS:   sky130_fd_sc_hd__a2bb2o_2 cells:       23
+ABC RESULTS:   sky130_fd_sc_hd__a2bb2oi_2 cells:       10
+ABC RESULTS:   sky130_fd_sc_hd__a311o_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a311oi_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a31o_2 cells:       22
+ABC RESULTS:   sky130_fd_sc_hd__a31oi_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__a32o_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__and2_2 cells:      109
+ABC RESULTS:   sky130_fd_sc_hd__and3_2 cells:       13
+ABC RESULTS:   sky130_fd_sc_hd__and3b_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__and4_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__and4b_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__buf_1 cells:     3522
+ABC RESULTS:   sky130_fd_sc_hd__inv_2 cells:      372
+ABC RESULTS:   sky130_fd_sc_hd__nand2_2 cells:       39
+ABC RESULTS:   sky130_fd_sc_hd__nand3b_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__nor2_2 cells:      116
+ABC RESULTS:   sky130_fd_sc_hd__nor2b_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__nor3_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__o2111a_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o2111ai_2 cells:       18
+ABC RESULTS:   sky130_fd_sc_hd__o211a_2 cells:       29
+ABC RESULTS:   sky130_fd_sc_hd__o211ai_2 cells:       14
+ABC RESULTS:   sky130_fd_sc_hd__o21a_2 cells:       35
+ABC RESULTS:   sky130_fd_sc_hd__o21ai_2 cells:       36
+ABC RESULTS:   sky130_fd_sc_hd__o21ba_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o21bai_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__o221a_2 cells:       64
+ABC RESULTS:   sky130_fd_sc_hd__o221ai_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__o22a_2 cells:      118
+ABC RESULTS:   sky130_fd_sc_hd__o22ai_2 cells:       17
+ABC RESULTS:   sky130_fd_sc_hd__o2bb2a_2 cells:        6
+ABC RESULTS:   sky130_fd_sc_hd__o311a_2 cells:        8
+ABC RESULTS:   sky130_fd_sc_hd__o31a_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__o31ai_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o32a_2 cells:       31
+ABC RESULTS:   sky130_fd_sc_hd__o41a_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__or2_2 cells:      150
+ABC RESULTS:   sky130_fd_sc_hd__or2b_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__or3_2 cells:       32
+ABC RESULTS:   sky130_fd_sc_hd__or3b_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__or4_2 cells:       18
+ABC RESULTS:   sky130_fd_sc_hd__or4b_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__or4bb_2 cells:        2
+ABC RESULTS:        internal signals:     1748
+ABC RESULTS:           input signals:     1492
+ABC RESULTS:          output signals:     2481
+Removing temp directory.
+
+41. Executing SETUNDEF pass (replace undef values with defined constants).
+
+42. Executing HILOMAP pass (mapping to constant drivers).
+
+43. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+44. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \core..
+Removed 38 unused cells and 14158 unused wires.
+<suppressed ~165 debug messages>
+
+45. Executing INSBUF pass (insert buffer cells for connected wires).
+
+46. Executing CHECK pass (checking for obvious problems).
+checking module core..
+Warning: Wire core.\wstrobe [3] is used but has no driver.
+Warning: Wire core.\wstrobe [2] is used but has no driver.
+Warning: Wire core.\wstrobe [1] is used but has no driver.
+Warning: Wire core.\wstrobe [0] is used but has no driver.
+Warning: Wire core.\wen is used but has no driver.
+Warning: Wire core.\wdata [31] is used but has no driver.
+Warning: Wire core.\wdata [30] is used but has no driver.
+Warning: Wire core.\wdata [29] is used but has no driver.
+Warning: Wire core.\wdata [28] is used but has no driver.
+Warning: Wire core.\wdata [27] is used but has no driver.
+Warning: Wire core.\wdata [26] is used but has no driver.
+Warning: Wire core.\wdata [25] is used but has no driver.
+Warning: Wire core.\wdata [24] is used but has no driver.
+Warning: Wire core.\wdata [23] is used but has no driver.
+Warning: Wire core.\wdata [22] is used but has no driver.
+Warning: Wire core.\wdata [21] is used but has no driver.
+Warning: Wire core.\wdata [20] is used but has no driver.
+Warning: Wire core.\wdata [19] is used but has no driver.
+Warning: Wire core.\wdata [18] is used but has no driver.
+Warning: Wire core.\wdata [17] is used but has no driver.
+Warning: Wire core.\wdata [16] is used but has no driver.
+Warning: Wire core.\wdata [15] is used but has no driver.
+Warning: Wire core.\wdata [14] is used but has no driver.
+Warning: Wire core.\wdata [13] is used but has no driver.
+Warning: Wire core.\wdata [12] is used but has no driver.
+Warning: Wire core.\wdata [11] is used but has no driver.
+Warning: Wire core.\wdata [10] is used but has no driver.
+Warning: Wire core.\wdata [9] is used but has no driver.
+Warning: Wire core.\wdata [8] is used but has no driver.
+Warning: Wire core.\wdata [7] is used but has no driver.
+Warning: Wire core.\wdata [6] is used but has no driver.
+Warning: Wire core.\wdata [5] is used but has no driver.
+Warning: Wire core.\wdata [4] is used but has no driver.
+Warning: Wire core.\wdata [3] is used but has no driver.
+Warning: Wire core.\wdata [2] is used but has no driver.
+Warning: Wire core.\wdata [1] is used but has no driver.
+Warning: Wire core.\wdata [0] is used but has no driver.
+Warning: Wire core.\ren is used but has no driver.
+Warning: Wire core.\pc [31] is used but has no driver.
+Warning: Wire core.\pc [30] is used but has no driver.
+Warning: Wire core.\pc [29] is used but has no driver.
+Warning: Wire core.\pc [28] is used but has no driver.
+Warning: Wire core.\pc [27] is used but has no driver.
+Warning: Wire core.\pc [26] is used but has no driver.
+Warning: Wire core.\pc [25] is used but has no driver.
+Warning: Wire core.\pc [24] is used but has no driver.
+Warning: Wire core.\pc [23] is used but has no driver.
+Warning: Wire core.\pc [22] is used but has no driver.
+Warning: Wire core.\pc [21] is used but has no driver.
+Warning: Wire core.\pc [20] is used but has no driver.
+Warning: Wire core.\pc [19] is used but has no driver.
+Warning: Wire core.\pc [18] is used but has no driver.
+Warning: Wire core.\pc [17] is used but has no driver.
+Warning: Wire core.\pc [16] is used but has no driver.
+Warning: Wire core.\pc [15] is used but has no driver.
+Warning: Wire core.\pc [14] is used but has no driver.
+Warning: Wire core.\pc [13] is used but has no driver.
+Warning: Wire core.\pc [12] is used but has no driver.
+Warning: Wire core.\pc [11] is used but has no driver.
+Warning: Wire core.\pc [10] is used but has no driver.
+Warning: Wire core.\pc [9] is used but has no driver.
+Warning: Wire core.\pc [8] is used but has no driver.
+Warning: Wire core.\pc [7] is used but has no driver.
+Warning: Wire core.\pc [6] is used but has no driver.
+Warning: Wire core.\pc [5] is used but has no driver.
+Warning: Wire core.\pc [4] is used but has no driver.
+Warning: Wire core.\pc [3] is used but has no driver.
+Warning: Wire core.\pc [2] is used but has no driver.
+Warning: Wire core.\pc [1] is used but has no driver.
+Warning: Wire core.\pc [0] is used but has no driver.
+Warning: Wire core.\data_address [31] is used but has no driver.
+Warning: Wire core.\data_address [30] is used but has no driver.
+Warning: Wire core.\data_address [29] is used but has no driver.
+Warning: Wire core.\data_address [28] is used but has no driver.
+Warning: Wire core.\data_address [27] is used but has no driver.
+Warning: Wire core.\data_address [26] is used but has no driver.
+Warning: Wire core.\data_address [25] is used but has no driver.
+Warning: Wire core.\data_address [24] is used but has no driver.
+Warning: Wire core.\data_address [23] is used but has no driver.
+Warning: Wire core.\data_address [22] is used but has no driver.
+Warning: Wire core.\data_address [21] is used but has no driver.
+Warning: Wire core.\data_address [20] is used but has no driver.
+Warning: Wire core.\data_address [19] is used but has no driver.
+Warning: Wire core.\data_address [18] is used but has no driver.
+Warning: Wire core.\data_address [17] is used but has no driver.
+Warning: Wire core.\data_address [16] is used but has no driver.
+Warning: Wire core.\data_address [15] is used but has no driver.
+Warning: Wire core.\data_address [14] is used but has no driver.
+Warning: Wire core.\data_address [13] is used but has no driver.
+Warning: Wire core.\data_address [12] is used but has no driver.
+Warning: Wire core.\data_address [11] is used but has no driver.
+Warning: Wire core.\data_address [10] is used but has no driver.
+Warning: Wire core.\data_address [9] is used but has no driver.
+Warning: Wire core.\data_address [8] is used but has no driver.
+Warning: Wire core.\data_address [7] is used but has no driver.
+Warning: Wire core.\data_address [6] is used but has no driver.
+Warning: Wire core.\data_address [5] is used but has no driver.
+Warning: Wire core.\data_address [4] is used but has no driver.
+Warning: Wire core.\data_address [3] is used but has no driver.
+Warning: Wire core.\data_address [2] is used but has no driver.
+Warning: Wire core.\data_address [1] is used but has no driver.
+Warning: Wire core.\data_address [0] is used but has no driver.
+found and reported 102 problems.
+
+47. Printing statistics.
+
+=== core ===
+
+   Number of wires:               8476
+   Number of wire bits:           8634
+   Number of public wires:        1371
+   Number of public wire bits:    1529
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               8568
+     sky130_fd_sc_hd__a211o_2        2
+     sky130_fd_sc_hd__a211oi_2      13
+     sky130_fd_sc_hd__a21bo_2        3
+     sky130_fd_sc_hd__a21boi_2       1
+     sky130_fd_sc_hd__a21o_2         4
+     sky130_fd_sc_hd__a21oi_2       26
+     sky130_fd_sc_hd__a221o_2        4
+     sky130_fd_sc_hd__a22o_2      1027
+     sky130_fd_sc_hd__a2bb2o_2      23
+     sky130_fd_sc_hd__a2bb2oi_2     10
+     sky130_fd_sc_hd__a311o_2        1
+     sky130_fd_sc_hd__a311oi_2       1
+     sky130_fd_sc_hd__a31o_2        22
+     sky130_fd_sc_hd__a31oi_2        2
+     sky130_fd_sc_hd__a32o_2         1
+     sky130_fd_sc_hd__and2_2       109
+     sky130_fd_sc_hd__and3_2        13
+     sky130_fd_sc_hd__and3b_2        2
+     sky130_fd_sc_hd__and4_2         1
+     sky130_fd_sc_hd__and4b_2        1
+     sky130_fd_sc_hd__buf_1       3522
+     sky130_fd_sc_hd__dfxtp_2     1378
+     sky130_fd_sc_hd__dlxtn_1        3
+     sky130_fd_sc_hd__inv_2        372
+     sky130_fd_sc_hd__mux2_4       625
+     sky130_fd_sc_hd__mux4_4       640
+     sky130_fd_sc_hd__nand2_2       39
+     sky130_fd_sc_hd__nand3b_2       2
+     sky130_fd_sc_hd__nor2_2       116
+     sky130_fd_sc_hd__nor2b_2        2
+     sky130_fd_sc_hd__nor3_2         2
+     sky130_fd_sc_hd__o2111a_2       1
+     sky130_fd_sc_hd__o2111ai_2     18
+     sky130_fd_sc_hd__o211a_2       29
+     sky130_fd_sc_hd__o211ai_2      14
+     sky130_fd_sc_hd__o21a_2        35
+     sky130_fd_sc_hd__o21ai_2       36
+     sky130_fd_sc_hd__o21ba_2        1
+     sky130_fd_sc_hd__o21bai_2       2
+     sky130_fd_sc_hd__o221a_2       64
+     sky130_fd_sc_hd__o221ai_2       4
+     sky130_fd_sc_hd__o22a_2       118
+     sky130_fd_sc_hd__o22ai_2       17
+     sky130_fd_sc_hd__o2bb2a_2       6
+     sky130_fd_sc_hd__o311a_2        8
+     sky130_fd_sc_hd__o31a_2         3
+     sky130_fd_sc_hd__o31ai_2        1
+     sky130_fd_sc_hd__o32a_2        31
+     sky130_fd_sc_hd__o41a_2         1
+     sky130_fd_sc_hd__or2_2        150
+     sky130_fd_sc_hd__or2b_2         2
+     sky130_fd_sc_hd__or3_2         32
+     sky130_fd_sc_hd__or3b_2         4
+     sky130_fd_sc_hd__or4_2         18
+     sky130_fd_sc_hd__or4b_2         4
+     sky130_fd_sc_hd__or4bb_2        2
+
+   Chip area for module '\core': 88427.308800
+
+48. Executing Verilog backend.
+Dumping module `\core'.
+
+Warnings: 102 unique messages, 102 total
+End of script. Logfile hash: f25afdae1e, CPU: user 8.33s system 0.05s, MEM: 62.66 MB peak
+Yosys 0.9+3621 (git sha1 84e9fa7, gcc 8.3.1 -fPIC -Os)
+Time spent: 39% 2x abc (5 sec), 18% 2x write_verilog (2 sec), ...
